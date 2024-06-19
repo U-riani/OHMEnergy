@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Image, Row, Col, NavLink } from "react-bootstrap";
+import { Container,  Row, NavLink } from "react-bootstrap";
 import VideoComponent from "../../components/VideoComponent";
-import { Link } from "react-router-dom";
+
 
 const MainPage1 = () => {
   return (

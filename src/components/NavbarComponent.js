@@ -5,8 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { geo, arm, usa, rus, logo } from "../images/flags/flags";
-import Image from "react-bootstrap/Image";
-import { NavLink } from "react-router-dom";
+
 
 const NavbarComponent = () => {
   // const geo1 = (

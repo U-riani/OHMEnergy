@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Container, Row } from "react-bootstrap";
 import partner11 from "../images/partners/partner-11";
 
 const Partners = () => {

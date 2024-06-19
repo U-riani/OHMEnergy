@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import newSvg from '../images/stats/newSvg'
+// import newSvg from '../images/stats/newSvg'
 
 const StatsComponent = () => {
   return (
