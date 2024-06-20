@@ -3,6 +3,28 @@
   --partners-boxes-width: 100px;
 }
 
+@font-face {
+  font-family: "HelveticaNeueLTStd Lt";
+  src: url("../font/helveticaneueltstd_lt-webfont.woff2") format("woff2"),
+    url("../font//helveticaneueltstd_lt-webfont.woff") format("woff"),
+    url("../font/HelveticaNeueLTStd\ Lt.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+button,
+p {
+  font-family: "HelveticaNeueLT Std Lt", sans-serif !important;
+}
+
 body {
   box-sizing: border-box !important;
   margin: 0;
@@ -106,8 +128,6 @@ body {
   height: 70vh !important;
 }
 
-
-
 .video-container {
   position: relative;
   width: 100%;
@@ -152,7 +172,7 @@ body {
 }
 
 .partners-row-1 {
-  width: 100%
+  width: 100%;
 }
 
 .partners-col-container {
@@ -277,7 +297,7 @@ body {
   top: 0;
   left: 0;
   display: block;
-  background-color: rgba(219, 189, 16, 0.922);
+  background-color: rgba(255, 231, 95, 0.268);
   filter: brightness(50);
   filter: contrast(0.4);
 }
@@ -287,7 +307,6 @@ body {
   /* position: absolute; */
   bottom: 0;
 }
-
 
 @media (min-width: 1400px) {
   .lang-toggle-container {
@@ -322,4 +341,3 @@ body {
     height: 250px;
   }
 }
-
