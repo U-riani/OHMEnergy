@@ -12,7 +12,7 @@ const ProjectsComponent = () => {
   ];
 
   return (
-    <Container fluid className="py-4 pt-0">
+    <Container fluid className="pt-4 pt-0">
       <Row className="py-5 d-flex justify-content-evenly mx-0 px-0">
         {projects.map((proj, i) => (
           <Col sm={4} className="mb-5 " key={i + 1}>

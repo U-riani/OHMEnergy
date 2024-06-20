@@ -294,6 +294,16 @@ body {
   bottom: 0;
 }
 
+.footer-icon-inner-container {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 @media (min-width: 1400px) {
   .lang-toggle-container {
     flex-direction: row-reverse;
@@ -325,5 +335,14 @@ body {
 
   .wrapper {
     height: 250px;
+  }
+
+  .footer-icon-inner-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-size {
+    font-size: 1.5rem !important;
   }
 }
