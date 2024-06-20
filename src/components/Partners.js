@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container, Row } from "react-bootstrap";
-import partner11 from "../images/partners/partner-11";
+import Partner11 from "../images/partners/partner-11";
 
 const Partners = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -45,7 +45,7 @@ const Partners = () => {
     },
     {
       name: "AEG",
-      logo: partner11,
+      logo: Partner11,
     },
     {
       name: "ESSD (Energy Saving Solutions & Design)",
@@ -150,7 +150,6 @@ const Partners = () => {
           </div>
         ))}
       </Row>
-      
     </Container>
   );
 };

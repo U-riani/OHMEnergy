@@ -89,7 +89,7 @@ const NavbarComponent = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider  />
                   </NavDropdown>
-                  <NavDropdown title="SOLUTIONS" id="basic-nav-dropdown">
+                  {/* <NavDropdown title="SOLUTIONS" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Solar PV plants
                     </NavDropdown.Item>
@@ -98,8 +98,8 @@ const NavbarComponent = () => {
                       Mounting systems
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                  </NavDropdown>
-                  <NavDropdown title="PRODUCTIONS" id="basic-nav-dropdown">
+                  </NavDropdown> */}
+                  {/* <NavDropdown title="PRODUCTIONS" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Solar modules
                     </NavDropdown.Item>
@@ -116,9 +116,9 @@ const NavbarComponent = () => {
                       Electrical heaters
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                  </NavDropdown>
-                  <Nav.Link href="#action2">FUNDING</Nav.Link>
-                  <Nav.Link href="#action2">SERVICES</Nav.Link>
+                  </NavDropdown> */}
+                  {/* <Nav.Link href="#action2">FUNDING</Nav.Link> */}
+                  {/* <Nav.Link href="#action2">SERVICES</Nav.Link> */}
                   <Nav.Link href="#action2">CONTACTS</Nav.Link>
                   <Nav.Link href="#action2">BLOG</Nav.Link>
                   <Nav.Link href="#action2">SOLAR CALCULATOR</Nav.Link>

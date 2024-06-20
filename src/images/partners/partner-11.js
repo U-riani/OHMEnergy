@@ -1,4 +1,6 @@
-const partner11 = () => (
+import React from 'react';
+
+const Partner11 = () => (
   <svg
     version="1.1"
     id="AW"
@@ -28,4 +30,4 @@ const partner11 = () => (
   </svg>
 );
 
-export default partner11;
+export default Partner11;

@@ -16,11 +16,12 @@ const ProjectsComponent = () => {
       <Row className="py-5 d-flex justify-content-evenly mx-0 px-0">
         {projects.map((proj, i) => (
           <Col sm={4} className="mb-5 " key={i + 1}>
-            <Card className=" border-0 rounded-0 projects-card-container" >
+            <Card className="border-0  rounded-0 projects-card-container" >
               <Card.Img variant="top" src={proj.src} className={`project-img project-img-${i + 1} rounded-0`}/>
-              <Card.Body className="projects-body-container ">
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
+              <div className="project-img-after"></div>
+              <Card.Body className="projects-body-container  border-0">
+                <Card.Title className="">Card Title</Card.Title>
+                <Card.Text className="">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
