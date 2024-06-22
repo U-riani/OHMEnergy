@@ -504,5 +504,9 @@ body {
   .footer-text-container {
     justify-content: space-evenly;
   }
+
+  .footer-text-col {
+    padding-left: 0 !important;
+  }
   
 }
