@@ -261,6 +261,11 @@ body {
   transform: scale(0.8);
 }
 
+.projects-container {
+  height: 600px;
+  overflow: scroll;
+}
+
 .project-img {
   height: 400px;
   width: 100%;
@@ -292,8 +297,8 @@ body {
 }
 
 .footer-icon-inner-container {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
