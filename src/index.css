@@ -3,13 +3,23 @@
   --partners-boxes-width: 100px;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   box-sizing: border-box !important;
   margin: 0;
 }
 
-.app {
+.App {
   width: 100%;
+  margin-top: 60px !important;
+}
+
+.main-page {
 }
 
 .navbar-container {

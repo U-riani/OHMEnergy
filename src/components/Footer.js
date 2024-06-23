@@ -64,12 +64,12 @@ const Footer = () => {
                   </NavDropdown> */}
                   <Accordion
                     className="footer-accordion-container"
-                    defaultActiveKey="0"
+                    // defaultActiveKey="0"
                     flush
                   >
                     <Accordion.Item eventKey="0">
                       <Accordion.Header className="footer-accordion">
-                        SERViCES
+                        SERVICES
                       </Accordion.Header>
                       <Accordion.Body className="py-0 ps-2 pe-0 d-flex flex-column">
                         <Nav.Link className="pt-3 pe-0">Solar Install</Nav.Link>
