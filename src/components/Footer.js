@@ -89,9 +89,9 @@ const Footer = () => {
           sm={6}
           md={6}
           lg={2}
-          className="footer-text-col ps-sm-0 ps-md-5 px-md-0 mb-4 mb-md-0 order-sm-1 order-lg-1 pt-3 pt-sm-0 ps-lg-0"
+          className="footer-text-col ps-sm-0 ps-md-5 px-md-0 pe-sm-5 mb-4 mb-md-0 order-sm-1 order-lg-1 pt-3 pt-sm-0 ps-lg-0"
         >
-          <div className="footer-text-inner-container ms-sm-0 me-md-5 me-lg-0  ms-lg-5">
+          <div className="footer-text-inner-container ms-sm-0 me-sm-2 me-md-5 me-lg-0  ms-lg-5">
             <div className="pb-2">
               <h4 className="">Addres</h4>
             </div>

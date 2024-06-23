@@ -419,6 +419,12 @@ body {
   padding-left: 0 !important;
 }
 
+@media (min-width: 576px) {
+  .footer-text-col {
+    justify-content: center !important;
+  }
+}
+
 @media (min-width: 768px) {
   /* .footer-text-col,
   .footer-map-inner-container {
