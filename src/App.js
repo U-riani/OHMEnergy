@@ -1,20 +1,20 @@
-import Navbar from "./components/NavbarComponent";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import Footer from "./components/Footer";
-import ProjectPage from "./pages/ProjectPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import SingleProjectPage from "./pages/SingleProjectPage";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="App">
-        <Routes>
-          <Route exac path="/" element={<MainPage />}/>
-          <Route path="/projects" element={<ProjectPage />}/>
-        </Routes>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="projects/:projectId" element={<SingleProjectPage />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }
