@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 const ProjectPage = () => {
   const projects = useSelector((state) => state.projects);
-  const dispatch = useDispatch();
+
   console.log(projects);
 
   const handleScroll = (e) => {

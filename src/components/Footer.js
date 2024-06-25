@@ -12,36 +12,7 @@ import { logo } from "../images/flags/flags";
 const Footer = () => {
   return (
     <Container fluid className="bg-secondary-subtle">
-      <Row className="py-4">
-        <Col sm={12} className="text-center pb-2">
-          <h3>Follow us</h3>
-        </Col>
-        <Col sm={12}>
-          <div className="footer-icons d-flex justify-content-center gap-3">
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
-              <FontAwesomeIcon
-                icon={faFacebookF}
-                className="icon-size"
-                size="2x"
-              />
-            </div>
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="icon-size"
-                size="2x"
-              />
-            </div>
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                className="icon-size"
-                size="2x"
-              />
-            </div>
-          </div>
-        </Col>
-      </Row>
+     
       <Row className="py-4 border-bottom px-5 footer-text-container">
         <Col
           sm={6}
@@ -55,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="footer-logo-menu-container">
               <div className="footer-logo-container pt-1">{logo}</div>
-              <div className="footer-nav ps-4">
+              <div className="footer-nav ps-5">
                 <Nav className="footer-nav-inner">
                   <Nav.Link>PROJECTS</Nav.Link>
                   {/* <NavDropdown title="SERViCES" id="basic-nav-dropdown" className="d-inline-flex p-relative">
@@ -78,8 +49,8 @@ const Footer = () => {
                     </Accordion.Item>
                   </Accordion>
                   <Nav.Link>BLOG</Nav.Link>
-                  <Nav.Link>SOLAR CALCULATOR</Nav.Link>
-                  <Nav.Link>ABOUT US</Nav.Link>
+                  <Nav.Link className="one-line-link">SOLAR CALCULATOR</Nav.Link>
+                  <Nav.Link className="one-line-link">ABOUT US</Nav.Link>
                 </Nav>
               </div>
             </div>
@@ -134,6 +105,36 @@ const Footer = () => {
             <div className="mail-container footer-info-containers">
               <FontAwesomeIcon icon={faEnvelope} />
               <p className="fst-italic ps-3">ohmenergy@info.ge</p>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row className="py-4">
+        <Col sm={12} className="text-center pb-2">
+          <h3>Follow us</h3>
+        </Col>
+        <Col sm={12}>
+          <div className="footer-icons d-flex justify-content-center gap-3">
+            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className="icon-size"
+                size="2x"
+              />
+            </div>
+            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="icon-size"
+                size="2x"
+              />
+            </div>
+            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                className="icon-size"
+                size="2x"
+              />
             </div>
           </div>
         </Col>

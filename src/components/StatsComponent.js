@@ -4,16 +4,16 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 const StatsComponent = () => {
   const images = [
     {
-      name: "svg4",
-      src: require("../images/stats/icons-04.png"),
+      name: "svg1",
+      src: require("../images/stats/icons-03.png"),
     },
     {
-      name: "svg5",
-      src: require("../images/stats/icons-05.png"),
+      name: "svg2",
+      src: require("../images/stats/icons-02.png"),
     },
     {
-      name: "svg6",
-      src: require("../images/stats/icons-06.png"),
+      name: "svg3",
+      src: require("../images/stats/icons-01.png"),
     },
   ];
   return (
@@ -23,8 +23,8 @@ const StatsComponent = () => {
           <div className="stats-inner-container  w-100 pb-3 pt-3">
             <Image src={images[0].src} className=""/>
             <div className="stats-text-container pt-2">
-              <h6>15 YEARS</h6>
-              <p>Product quality Warranty</p>
+              <h2>3</h2>
+              <p>Countries</p>
             </div>
           </div>
         </Col>
@@ -32,8 +32,8 @@ const StatsComponent = () => {
           <div className="stats-inner-container w-100 pb-3 pt-3">
           <Image src={images[1].src} />
           <div className="stats-text-container pt-2">
-              <h6>25 YEARS</h6>
-              <p>Performance Warranty</p>
+              <h2>1000+</h2>
+              <p>Satisfied Customers</p>
             </div>
           </div>
         </Col>
@@ -41,8 +41,8 @@ const StatsComponent = () => {
           <div className="stats-inner-container w-100 pb-3 pt-3">
           <Image src={images[2].src} />
           <div className="stats-text-container pt-2">
-              <h6>10 YEARS</h6>
-              <p>Inverter Warranty</p>
+              <h2>70+</h2>
+              <p>mWh Produced</p>
             </div>
           </div>
         </Col>

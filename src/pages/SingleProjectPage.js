@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const SingleProjectPage = () => {
   const {projectId} = useParams()
-  const project = useSelector(state => state.projects.find(proj => proj.name == projectId));
+  const project = useSelector(state => state.projects.find(proj => proj.name === projectId));
   console.log(projectId)
   return (
     <Container fluid>
