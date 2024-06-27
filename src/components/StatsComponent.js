@@ -17,7 +17,7 @@ const StatsComponent = () => {
     },
   ];
   return (
-    <Container fluid className="mt-5 pt-4 stats-container">
+    <Container fluid className="mt-0 pt-0 stats-container">
       <Row className="bg-dark text-light pt-4 pb-2">
         <Col sm={4} className="d-flex justify-content-center">
           <div className="stats-inner-container  w-100 pb-3 pt-3">

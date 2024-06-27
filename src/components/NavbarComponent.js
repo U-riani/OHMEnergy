@@ -39,7 +39,7 @@ const NavbarComponent = () => {
   return (
     <Navbar
       expand="xxl"
-      className="bg-body-tertiary px-4 py-0 navbar-container"
+      className="bg-body-tertiary px-4 py-0 navbar-container mb-0 pb-0"
       fixed="top"
     >
       <Container fluid className="h-100">
@@ -51,7 +51,7 @@ const NavbarComponent = () => {
             <Nav.Link
               as={Link}
               to="/contact"
-              className="me-1 px-2 text-dark bg-warning"
+              className="me-1 py-2 px-3 text-dark bg-warning"
             >
               Contact Us
             </Nav.Link>
@@ -79,9 +79,9 @@ const NavbarComponent = () => {
               id={`offcanvasNavbar-expand-sm`}
               aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
               placement="end"
-              className="offcanvas-menu"
+              className="offcanvas-menu "
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header closeButton className="offcanvas-header-background-color">
                 <Offcanvas.Title
                   id={`offcanvasNavbarLabel-expand-sm`}
                   className="w-100 text-center"
@@ -95,15 +95,15 @@ const NavbarComponent = () => {
                   </Nav.Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body className="px-3">
-                <Nav className="justify-content-end flex-grow-1">
+              <Offcanvas.Body className="px-3 offcanvas-body-background-color">
+                <Nav className="offcanvas-full-navbar flex-grow-1">
                   <Nav.Link as={Link} to="/#about-us">
                     ABOUT US
                   </Nav.Link>
                   <NavDropdown
                     title="OUR PARTNERS"
                     id="basic-nav-dropdown"
-                    className="menu-drop-down-item"
+                    className="menu-drop-down-item navbar-drop-down-1400px"
                   >
                     <NavDropdown.Item
                       as={Link}
