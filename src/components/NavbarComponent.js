@@ -72,7 +72,7 @@ const NavbarComponent = () => {
           </div>
           <div className="menu-toggle-container">
             <Navbar.Toggle
-              aria-controls={`offcanvasNavbar-expand-sm`}
+              aria-controls={`offcanvasNavbar-expand-md`}
               className="border-0 close-open-menu"
             />
             <Navbar.Offcanvas
@@ -95,22 +95,13 @@ const NavbarComponent = () => {
                   </Nav.Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body className="px-0">
+              <Offcanvas.Body className="px-3">
                 <Nav className="justify-content-end flex-grow-1">
-                  <Nav.Link as={Link} to="/#projects">
-                    PROJECTS
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#stats">
-                    STATS
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#calculator">
-                    CALCULATOR
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#partners">
-                    PARTNERS
+                  <Nav.Link as={Link} to="/#about-us">
+                    ABOUT US
                   </Nav.Link>
                   <NavDropdown
-                    title="SERVICES"
+                    title="OUR PARTNERS"
                     id="basic-nav-dropdown"
                     className="menu-drop-down-item"
                   >
@@ -119,14 +110,28 @@ const NavbarComponent = () => {
                       to="#action/3.1"
                       className="menu-drop-down-item"
                     >
-                      Solar Installations
+                      Large Scale
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item as={Link} to="#action/3.2">
-                      Modern Heating
+                      Comercial
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="#action/3.3"
+                      className="menu-drop-down-item"
+                    >
+                      Redidential
+                    </NavDropdown.Item>
                   </NavDropdown>
+
+                  <Nav.Link as={Link} to="/#partners">
+                    PARTNERS
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/#calculator">
+                    CALCULATOR
+                  </Nav.Link>
                   <Nav.Link as={Link} to="/#contact">
                     CONTACTS
                   </Nav.Link>
@@ -135,9 +140,6 @@ const NavbarComponent = () => {
                   </Nav.Link>
                   <Nav.Link as={Link} to="/#solar-calculator">
                     SOLAR CALCULATOR
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#about-us">
-                    ABOUT US
                   </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
