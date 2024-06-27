@@ -8,25 +8,27 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { logo } from "../images/flags/flags";
+import "../footer.css";
 
-const Footer = () => {
+const FooterComponent = () => {
   return (
     <Container fluid className="bg-secondary-subtle">
-      <Row className="py-4 border-bottom px-5 footer-text-container">
-        {/* <Col
-          sm={6}
-          lg={3}
-          className="footer-text-col ps-sm-0 ps-md-5 ps-lg-0 px-md-0 mb-4 mb-md-0  order-sm-3 order-lg-0 pt-0 pt-sm-3 pt-lg-0"
-        > */}
-        <Col sm={6} md={6} lg={4} className="footer-text-col px-0">
-          <div className="footer-map-inner-container">
-            <div className="py-2">
-              <h4 className="mb-3">Site Map</h4>
-              <hr className="" />
+      <Row className="py-4 border-bottom px-5 ">
+        <div className="footer-menu-info-container ">
+          <div className="footer-site-map-container mb-5">
+            <div className="footer-site-map-title-container">
+              <h4>Site Map</h4>
+              <hr />
             </div>
-            <div className="footer-logo-menu-container">
-              <div className="footer-logo-container pt-0">{logo}</div>
-              <div className="footer-nav">
+            <div className="footer-site-map-logo-menu-container">
+              <div className="footer-site-map-logo-container">
+                <div className="footer-site-map-logo-container">
+                  <div className="footer-site-map-logo-inner-container pt-0">
+                    {logo}
+                  </div>
+                </div>
+              </div>
+              <div className="footer-site-map-menu-container">
                 <Nav className="footer-nav-inner">
                   <Nav.Link>PROJECTS</Nav.Link>
                   {/* <NavDropdown title="SERViCES" id="basic-nav-dropdown" className="d-inline-flex p-relative">
@@ -57,58 +59,44 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </Col>
-        <Col
-          sm={3}
-          md={3}
-          lg={3}
-          // className="footer-text-col ps-sm-0 ps-md-5 px-md-0 pe-sm-5 mb-4 mb-md-0 order-sm-1 order-lg-1 pt-3 pt-sm-0 ps-lg-0"
-          className="footer-text-col px-0"
-        >
-          <div className="footer-text-inner-container ms-sm-0 me-md-5 me-lg-0 ">
-          <div className="py-2 w-100">
-              <h4 className="mb-3">Address</h4>
-              <hr className="" />
+          <div className="footer-address-menu-container">
+            <div className="footer-site-map-title-container">
+              <h4>Address</h4>
+              <hr />
             </div>
-            <div className="footer-addres">
+            <div className="footer-site-map-p-container footer-site-map-address-text-container">
               <p>Sulkhan Tsintsadze st. 22</p>
               <p>Tbilisi, Georgia</p>
             </div>
           </div>
-        </Col>
-        <Col
-          sm={6}
-          lg={3}
-          md={6}
-          xxl={3}
-          className="footer-text-col footer-working-hours-container px-0"
-        >
-          <div className="footer-text-inner-container">
-          <div className="py-2">
-              <h4 className="mb-3">Working Hours</h4>
-              <hr className="" />
+          <div className="footer-working-hours-menu-container">
+            <div className="footer-site-map-title-container">
+              <h4>Working Hours</h4>
+              <hr />
             </div>
-            <p>Mon - Fri, 09:00 - 18:00</p>
-            <p>Saturday, 10:00 - 17:00</p>
-          </div>
-        </Col>
-        <Col sm={6} md={6} lg={2} className="footer-text-col footer-contact-container px-0">
-          <div className="footer-text-inner-container">
-          <div className="py-2 w-100">
-              <h4 className="mb-3">Contact</h4>
-              <hr className="" />
-            </div>
-          
-            <div className="number-container footer-info-containers">
-              <FontAwesomeIcon icon={faPhone} />
-              <p className="fst-italic ps-3">+995 598 598 598</p>
-            </div>
-            <div className="mail-container footer-info-containers">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <p className="fst-italic ps-3">ohmenergy@info.ge</p>
+            <div className="footer-site-map-p-container footer-site-map-working-hours-text-container">
+              <p>Mon - Fri, 09:00 - 18:00</p>
+              <p>Saturday, 10:00 - 17:00</p>
             </div>
           </div>
-        </Col>
+          {/* <div className="footer-site-map-"></div> */}
+          <div className="footer-contact-menu-container">
+            <div className="footer-site-map-title-container">
+              <h4>Contact</h4>
+              <hr />
+            </div>
+            <div className="footer-site-map-p-container footer-site-map-contact-text-container">
+              <div className="footer-site-map-contact-info-container footer-site-map-contact-number-container">
+                <FontAwesomeIcon icon={faPhone} />
+                <p className="ps-3">+995 598 598 598</p>
+              </div>
+              <div className="footer-site-map-contact-info-container footer-site-map-contact-mail-container">
+                <FontAwesomeIcon icon={faEnvelope} />
+                <p className="ps-3">ohmenergy@info.ge</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Row>
       <Row className="py-4">
         <Col sm={12} className="text-center pb-2">
@@ -149,4 +137,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterComponent;

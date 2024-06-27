@@ -430,10 +430,13 @@ a {
 
 .footer-map-inner-container {
   display: inline-flex;
+  width: 100%;
+  
 }
 
 .footer-logo-container {
   display: inline-flex;
+  width: 30%;
 }
 
 .footer-text-container,
@@ -456,15 +459,20 @@ a {
   text-align: left; /* Ensure text is left-aligned */
 }
 
-.footer-text-inner-container hr {
+/* .footer-text-inner-container hr {
   margin: 0;
   width: 100%;
   height: 1px;
-}
+} */
+
 .footer-text-inner-container p,
 .footer-text-inner-container h4 {
-  display: inline-flex;
+  display: flex;
   margin: 0;
+}
+
+.footer-text-inner-container p {
+  font-size: small;
 }
 
 .footer-info-containers {
@@ -481,9 +489,13 @@ a {
 
 .footer-accordion-container {
   display: inline-flex;
-  width: 50%;
+  width: 100%;
   --bs-accordion-bg: none !important;
   --bs-accordion-active-bg: none !important;
+}
+
+.accordion-item {
+ width: 100%;
 }
 
 .footer-accordion button,
@@ -491,9 +503,13 @@ a {
   padding-left: 0 !important;
   padding-right: 0;
   color: black;
+  font-size: small;
 }
 
 .footer-accordion button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 0;
   padding-bottom: 0.1rem;
 }
@@ -530,6 +546,7 @@ a {
 
 .footer-logo-menu-container {
   display: inline-flex;
+  justify-content: space-between;
 }
 
 .footer-nav-inner {
@@ -548,9 +565,24 @@ a {
   text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
 }
 
+footer p {
+  font-size: small !important;
+}
+
 @media (min-width: 576px) {
   .footer-text-col {
     justify-content: center !important;
+  }
+
+  .footer-text-container {
+    justify-content: space-between;
+  }
+
+  .footer-working-hours-container {
+    justify-content: flex-start !important;
+  }
+  .footer-contact-container {
+    justify-content: flex-end !important;
   }
 
   .projects-container {
@@ -585,8 +617,9 @@ a {
   .footer-text-col {
     justify-content: center;
   }
-  .footer-text-container {
-    justify-content: space-evenly;
+
+  .footer-logo-container {
+    width: 50%;
   }
 
   .working-hours {
@@ -596,7 +629,11 @@ a {
   }
 }
 
-@media (min-width: 976) {
+@media (min-width: 992px) {
+  .footer-working-hours-container, .footer-contact-container {
+    justify-content: center !important;
+  }
+ 
 }
 
 @media (min-width: 1400px) {

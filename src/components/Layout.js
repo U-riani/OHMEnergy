@@ -4,6 +4,7 @@ import Navbar from "./NavbarComponent";
 import Footer from "./Footer";
 import { Container } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
+import FooterComponent from "./FooterComponent";
 
 const Layout = () => {
   return (
@@ -12,7 +13,8 @@ const Layout = () => {
       <Container fluid className="px-0 App">
         <Outlet />
       </Container>
-      <Footer />
+      {/* <Footer /> */}
+      {<FooterComponent />}
     </>
   );
 };
