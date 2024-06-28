@@ -6,6 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { geo, arm, usa, rus, logo } from "../images/flags/flags";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHourglassHalf, faSolarPanel, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarComponent = () => {
   const location = useLocation();
@@ -81,7 +83,10 @@ const NavbarComponent = () => {
               placement="end"
               className="offcanvas-menu "
             >
-              <Offcanvas.Header closeButton className="offcanvas-header-background-color">
+              <Offcanvas.Header
+                closeButton
+                className="offcanvas-header-background-color"
+              >
                 <Offcanvas.Title
                   id={`offcanvasNavbarLabel-expand-sm`}
                   className="w-100 text-center"
@@ -101,45 +106,40 @@ const NavbarComponent = () => {
                     ABOUT US
                   </Nav.Link>
                   <NavDropdown
-                    title="OUR PARTNERS"
+                    title="OUR PROJECTS"
                     id="basic-nav-dropdown"
                     className="menu-drop-down-item navbar-drop-down-1400px"
                   >
                     <NavDropdown.Item
                       as={Link}
                       to="#action/3.1"
-                      className="menu-drop-down-item"
+                      className="menu-drop-down-item menu-drop-down-item-container"
                     >
-                      Large Scale
+                      <FontAwesomeIcon icon={faHourglassHalf} className="navbar-dropdown-icon"/>
+                      <p>Large Scale</p>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="#action/3.2">
-                      Comercial
+                    <NavDropdown.Item as={Link} to="#action/3.2" className="menu-drop-down-item-container">
+                    <FontAwesomeIcon icon={faSolarPanel} className="navbar-dropdown-icon"/><p>Comercial</p>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={Link}
                       to="#action/3.3"
-                      className="menu-drop-down-item"
+                      className="menu-drop-down-item menu-drop-down-item-container"
                     >
-                      Redidential
+                      <FontAwesomeIcon icon={faHouse} className="navbar-dropdown-icon" /><p>Residential</p>
                     </NavDropdown.Item>
                   </NavDropdown>
+                  <Nav.Link as={Link} to="/#blog">
+                    BLOG
+                  </Nav.Link>
 
                   <Nav.Link as={Link} to="/#partners">
                     PARTNERS
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/#calculator">
-                    CALCULATOR
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#contact">
-                    CONTACTS
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/#blog">
-                    BLOG
-                  </Nav.Link>
                   <Nav.Link as={Link} to="/#solar-calculator">
-                    SOLAR CALCULATOR
+                  SOLAR CALCULATOR
                   </Nav.Link>
                 </Nav>
               </Offcanvas.Body>

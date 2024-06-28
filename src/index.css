@@ -57,7 +57,7 @@ body {
 
 .offcanvas-menu {
   width: 250px !important;
-  background-color: rgba(255, 255, 255, 0.408) !important;
+  /* background-color: rgba(255, 255, 255, 0.408) !important; */
 }
 
 .offcanvas-header-background-color {
@@ -73,6 +73,26 @@ body {
   border-radius: 0 !important;
   border-left: none !important;
   border-right: none !important;
+}
+
+.menu-drop-down-item-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start;
+}
+
+.menu-drop-down-item-container svg{
+  width: 20px;
+}
+
+.menu-drop-down-item-container p{
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.navbar-dropdown-icon {
+  /* padding-right: 10px; */
 }
 
 .dropdown-toggle,
@@ -682,7 +702,7 @@ footer p {
     padding-left: 0px !important;
   }
 
-  .navbar-drop-down-1400px .dropdown-menu {
+  .navbar-drop-down-1400px .dropdown-menu a{
     padding-left: 10px !important;
   }
 
