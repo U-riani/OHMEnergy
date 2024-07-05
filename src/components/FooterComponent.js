@@ -90,11 +90,11 @@ const FooterComponent = () => {
             <div className="footer-site-map-p-container footer-site-map-contact-text-container">
               <div className="footer-site-map-contact-info-container footer-site-map-contact-number-container">
                 <FontAwesomeIcon icon={faPhone} />
-                <p className="ps-3">+995 32 280 00 33</p>
+                <p className="ps-3 text-center">+995 32 280 00 33</p>
               </div>
               <div className="footer-site-map-contact-info-container footer-site-map-contact-mail-container">
                 <FontAwesomeIcon icon={faEnvelope} />
-                <p className="ps-3">info@ohmenergy.ge</p>
+                <p className="ps-3 text-center">info@ohmenergy.ge</p>
               </div>
             </div>
           </div>

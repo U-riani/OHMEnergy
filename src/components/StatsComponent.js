@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import {  Container, Image, Row } from "react-bootstrap";
 
 const StatsComponent = () => {
   const images = [

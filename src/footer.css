@@ -20,6 +20,13 @@
   padding-bottom: 30px;
 }
 
+
+.footer-site-map-contact-info-containe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @media (min-width: 576px) {
   .footer-menu-info-container {
     display: flex;
