@@ -73,8 +73,8 @@ const Partners = () => {
   }, [screenWidth, partnersNum]);
 
   return (
-    <Container fluid className="py-5 px-5 d-flex flex-column align-items-center">
-      <Row className="d-flex justify-content-between px-1 partners-row-1">
+    <Container fluid className="py-3 px-0 d-flex flex-column align-items-center partners-container">
+      <Row className="d-flex justify-content-between  partners-row-1">
         {partners.filter((el, ind) => ind < 6).map((part, i) => (
           <div
             key={i}
@@ -112,7 +112,7 @@ const Partners = () => {
           </div>
         ))}
       </Row>
-      <Row className="d-flex justify-content-between px-1">
+      <Row className="d-flex justify-content-between">
         {partners.filter((el, ind) => ind >= 6).map((part, i) => (
           <div
             key={i}

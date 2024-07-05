@@ -17,9 +17,9 @@ const Calculator = () => {
   ];
 
   return (
-    <Container fluid className=" pt-5 calculator-page-container page-container">
+    <Container fluid className=" py-5 calculator-page-container page-container">
       <h2>Solar Power Plant Calculator</h2>
-      <Row className="py-4">
+      <Row className="pt-4">
         <p>
           Use our calculator to discover the required system capacity, cost and
           other details you need. Simply input your monthly electricity
@@ -37,7 +37,9 @@ const Calculator = () => {
               // variant={idx % 2 ? "outline-success" : "outline-danger"}
               variant={"outline-warning"}
               name="radio"
-              className={"py-3 text-dark rounded-0 border-1"}
+              className={
+                "py-3 text-dark rounded-0 border-1 calculator-active-button"
+              }
               value={radio.value}
               checked={radioValue === radio.value}
               onChange={(e) => setRadioValue(e.currentTarget.value)}
@@ -49,31 +51,33 @@ const Calculator = () => {
       </Row>
       <Row className="border  pt-4">
         <h2 className="py-2 fw-bold">Monthly cost:</h2>
-        <p className="py-2">Enter how much you pay for electricity every month, in {`GEL`}</p>
-        <Col sm={10} md={10} >
-          <InputGroup className="d-flex flex-column flex-sm-row">
+        <p className="py-2">
+          Enter how much you pay for electricity every month, in {`GEL`}
+        </p>
+        <Col sm={10} md={10} className="ps-0 ">
+          <InputGroup className="d-flex flex-column flex-sm-row ">
             <Form.Control
               placeholder="GEL"
               aria-label="GEL"
               aria-describedby="basic-addon2"
-              className=" px-1 rounded-0 border-warning w-100 form-control-responsive"
+              className="calculator-input px-1 rounded-0  w-100 form-control-responsive"
             />
           </InputGroup>
         </Col>
-        <Col sm={2} md={2}>
+        <Col sm={2} md={2} className="pe-0">
           <Button
-            className="w-100 w-md-25 px-0 rounded-0 bg-warning"
+            className="w-100 w-md-25 px-0 p rounded-0 calculator-submit-button "
             variant=""
             id="button-addon2"
           >
             Calculate
           </Button>
         </Col>
-      <Row className=" py-5 d-flex">
-        <hr className="ms-2"/>
-        <h2 className="py-4 fw-bold">Calculation:</h2>
-        <CalcComponent />
       </Row>
+      <Row className="">
+        <hr className="calculator-hr mt-5" />
+        <h2 className="py-4 mb-0 fw-bold">Calculation:</h2>
+        <CalcComponent />
       </Row>
     </Container>
   );

@@ -40,20 +40,20 @@ const NavbarComponent = () => {
 
   return (
     <Navbar
-      expand="xxl"
-      className="bg-body-tertiary px-4 py-0 navbar-container mb-0 pb-0"
+      expand="lg"
+      className="bg-body-tertiary py-0 navbar-container mb-0 pb-0 px-0"
       fixed="top"
     >
-      <Container fluid className="h-100">
+      <Container fluid className="h-100 navbar-inner-container">
         <Navbar.Brand as={Link} to="/" className="h-100 me-0 py-0">
           <div className="logo-container">{logo}</div>
         </Navbar.Brand>
-        <div className="lang-toggle-container w-10">
+        <div className="lang-toggle-container">
           <div className="contact-menu contact-menu-sm d-none d-sm-block">
             <Nav.Link
               as={Link}
               to="/contact"
-              className="me-1 py-2 px-3 text-dark bg-warning"
+              className="me-0 py-2 px-3 text-dark contact-us-button"
             >
               Contact Us
             </Nav.Link>
@@ -62,7 +62,7 @@ const NavbarComponent = () => {
             <NavDropdown
               title={geo}
               id="basic-nav-dropdown"
-              className="flags-drop-down-item ps-0"
+              className="flags-drop-down-item ps-0 "
             >
               <NavDropdown.Divider className="w-100" />
               <NavDropdown.Item className="w-25 px-1">{arm}</NavDropdown.Item>
@@ -72,7 +72,7 @@ const NavbarComponent = () => {
               <NavDropdown.Item className="w-25 px-1">{rus}</NavDropdown.Item>
             </NavDropdown>
           </div>
-          <div className="menu-toggle-container">
+          <div className="menu-toggle-container px-xxl-0">
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-md`}
               className="border-0 close-open-menu"
@@ -94,15 +94,15 @@ const NavbarComponent = () => {
                   <Nav.Link
                     as={Link}
                     to="/contact"
-                    className="w-75 mx-auto px-0 rounded-pill bg-warning text-dark"
+                    className="w-75 mx-auto px-0 rounded-0 offcanvas-contact"
                   >
                     Contact Us
                   </Nav.Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body className="px-3 offcanvas-body-background-color">
+              <Offcanvas.Body className="px-3 px-lg-0 offcanvas-body-background-color">
                 <Nav className="offcanvas-full-navbar flex-grow-1">
-                  <Nav.Link as={Link} to="/#about-us">
+                  <Nav.Link as={Link} to="/about-us">
                     ABOUT US
                   </Nav.Link>
                   <NavDropdown
@@ -112,33 +112,33 @@ const NavbarComponent = () => {
                   >
                     <NavDropdown.Item
                       as={Link}
-                      to="#action/3.1"
+                      to="large-scale"
                       className="menu-drop-down-item menu-drop-down-item-container"
                     >
                       <FontAwesomeIcon icon={faHourglassHalf} className="navbar-dropdown-icon"/>
                       <p>Large Scale</p>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="#action/3.2" className="menu-drop-down-item-container">
+                    <NavDropdown.Item as={Link} to="comercial" className="menu-drop-down-item-container">
                     <FontAwesomeIcon icon={faSolarPanel} className="navbar-dropdown-icon"/><p>Comercial</p>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={Link}
-                      to="#action/3.3"
+                      to="residential"
                       className="menu-drop-down-item menu-drop-down-item-container"
                     >
                       <FontAwesomeIcon icon={faHouse} className="navbar-dropdown-icon" /><p>Residential</p>
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link as={Link} to="/#blog">
+                  <Nav.Link as={Link} to="/blog">
                     BLOG
                   </Nav.Link>
 
-                  <Nav.Link as={Link} to="/#partners">
+                  <Nav.Link as={Link} to="/partners">
                     PARTNERS
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/#solar-calculator">
+                  <Nav.Link as={Link} to="/#calculator">
                   SOLAR CALCULATOR
                   </Nav.Link>
                 </Nav>

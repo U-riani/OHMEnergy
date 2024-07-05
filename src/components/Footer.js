@@ -123,7 +123,7 @@ const Footer = () => {
                 size="2x"
               />
             </div>
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+            <div className="footer-icon-inner-container p-3">
               <FontAwesomeIcon
                 icon={faInstagram}
                 className="icon-size"

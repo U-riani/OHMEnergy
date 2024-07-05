@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronLeft,
+  faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import {  Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // Custom arrow components
@@ -28,25 +29,25 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const MultiItemCarousel = ({ projects }) => {
+const MultiItemCarousel = (prop) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
-  console.log("prop", projects);
+
   return (
     <Slider {...settings}>
-      {projects &&
-        projects.map((item, i) => (
-          <div className="item-container p-2" key={i}>
-            <div className="item-inner-container">
+      {prop.projects &&
+        prop.projects.map((item, i) => (
+          <div className="projects-item-container item-container p-2" key={i}>
+            <div className="projects-item-inner-container item-inner-container">
               <Link
                 to={`projects/${item.name}`}
                 className="projects-carousel-link"
@@ -56,17 +57,38 @@ const MultiItemCarousel = ({ projects }) => {
                   className={`project-img project-img-${i + 1}`}
                 />
                 <div className="projects-body-container px-1 px-sm-2 px-md-3 py-0 py-sm-1 py-md-2 py-lg-3">
-                  <h6 className="projects-title py-1 py-sm-2 mb-0">Card Title</h6>
-                  <p className="projects-text mb-0 py-0 py-sm-1 py-md-2 py-ld-3">some text sacasc sac sacas csa csac sac sacsa csac</p>
+                  <h6 className="projects-title py-1 py-sm-2 mb-0">
+                    Card Title
+                  </h6>
+                  <p className="projects-text mb-0 py-0 py-sm-1 py-md-2 py-ld-3">
+                    some text sacasc sac sacas csa csac sac sacsa csac
+                  </p>
                 </div>
               </Link>
             </div>
           </div>
         ))}
-      {/* <div className="item-container">Item 2</div>
-      <div className="item-container">Item 3</div>
-      <div className="item-container">Item 4</div>
-      <div className="item-container">Item 5</div> */}
+      {prop.commentData &&
+        prop.commentData.map((item, i) => (
+          <div className="item-container p-2" key={i}>
+            <div className="item-inner-container comments-item-inner-container">
+              <div className="comments-multiitem-carousel-text-container">
+                <div className="quete-text-container mb-0">
+                <div className="multiitem-carousel-name-container">
+                  <h6 className="fw-bold comments-author">{item.name}</h6>
+                </div>
+                  <p className="mb-3 p-3">
+                    <FontAwesomeIcon icon={faQuoteLeft} /> {item.text}
+                  </p>
+                  <div className="multiitem-carousel-name-container">
+                    <h6>My company</h6>
+                  </div>
+                </div>
+                {/* <div className="quete-text-bottom"></div> */}
+              </div>
+            </div>
+          </div>
+        ))}
     </Slider>
   );
 };

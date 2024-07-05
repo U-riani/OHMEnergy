@@ -5,6 +5,7 @@ import Calculator from "../components/CalculatorComponent";
 import Partners from "../components/Partners";
 import ProjectsComponent from "../components/ProjectsComponent";
 import StatsComponent from "../components/StatsComponent";
+import CommentComponent from "../components/CommentComponent";
 
 const MainPage = () => {
   return (
@@ -23,6 +24,9 @@ const MainPage = () => {
       </div>
       <div id="projects">
         <ProjectsComponent />
+      </div>
+      <div id="comment">
+        <CommentComponent />
       </div>
     </Container>
   );

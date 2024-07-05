@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import SingleProjectPage from "./pages/SingleProjectPage";
 import Layout from "./components/Layout";
+import AboutsUs from "./pages/AboutsUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="projects/:projectId" element={<SingleProjectPage />} />
+          <Route path="about-us" element={<AboutsUs />} />
         </Route>
       </Routes>
     </Router>

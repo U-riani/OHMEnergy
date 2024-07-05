@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <Container fluid className="px-0 App">
+      <Container fluid className=" App">
         <Outlet />
       </Container>
       {/* <Footer /> */}

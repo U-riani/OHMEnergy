@@ -9,13 +9,15 @@ import {
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { logo } from "../images/flags/flags";
 import "../footer.css";
+import { Link } from "react-scroll";
 
 const FooterComponent = () => {
   return (
-    <Container fluid className="bg-secondary-subtle">
-      <Row className="py-4 border-bottom px-5 ">
+    <Container fluid className="footer d-flex flex-column justify-content-center align-center px-0 py-5">
+      <Container fluid className="footer-inner-container">
+      <Row className=" border-bottom ">
         <div className="footer-menu-info-container ">
-          <div className="footer-site-map-container mb-5">
+          <div className="footer-site-map-container">
             <div className="footer-site-map-title-container">
               <h4>Site Map</h4>
               <hr />
@@ -30,7 +32,7 @@ const FooterComponent = () => {
               </div>
               <div className="footer-site-map-menu-container">
                 <Nav className="footer-nav-inner">
-                  <Nav.Link>ABOUT US</Nav.Link>
+                  <Nav.Link><p>ABOUT US</p></Nav.Link>
                   {/* <NavDropdown title="SERViCES" id="basic-nav-dropdown" className="d-inline-flex p-relative">
                     <Dropdown.Item>Solar Install</Dropdown.Item>
                     <Dropdown.Item>Modern Heating</Dropdown.Item>
@@ -42,19 +44,19 @@ const FooterComponent = () => {
                   >
                     <Accordion.Item eventKey="0">
                       <Accordion.Header className="footer-accordion">
-                        OUR PROJECTS
+                        <p>OUR PROJECTS</p>
                       </Accordion.Header>
                       <Accordion.Body className="py-0 ps-2 pe-0 d-flex flex-column">
-                        <Nav.Link className="pt-3 pe-0">LARGE SCALE</Nav.Link>
-                        <Nav.Link className=" pe-0">COMMERCIAL</Nav.Link>
-                        <Nav.Link className=" pe-0">RESIDENTIALL</Nav.Link>
+                        <Nav.Link className="py-0 pe-0"><p>LARGE SCALE</p></Nav.Link>
+                        <Nav.Link className=" pe-0"><p>COMMERCIAL</p></Nav.Link>
+                        <Nav.Link className=" pe-0"><p>RESIDENTIALL</p></Nav.Link>
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
-                  <Nav.Link>BLOG</Nav.Link>
-                  <Nav.Link className="one-line-link">PARTNERS</Nav.Link>
+                  <Nav.Link><p>BLOG</p></Nav.Link>
+                  <Nav.Link className="one-line-link"><p>PARTNERS</p></Nav.Link>
                   <Nav.Link className="one-line-link">
-                    SOLAR CALCULATOR
+                    <p>SOLAR CALCULATOR</p>
                   </Nav.Link>
                 </Nav>
               </div>
@@ -98,41 +100,48 @@ const FooterComponent = () => {
           </div>
         </div>
       </Row>
-      <Row className="py-4">
+      <Row className="footer-social-media-container">
         <Col sm={12} className="text-center pb-2">
           <h3>Follow us</h3>
         </Col>
         <Col sm={12}>
           <div className="footer-icons d-flex justify-content-center gap-3">
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+            <div className="footer-icon-inner-container">
+              <Link to='facebook'>
               <FontAwesomeIcon
                 icon={faFacebookF}
                 className="icon-size"
                 size="2x"
               />
+              </Link>
             </div>
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+            <div className="footer-icon-inner-container">
+              <Link to='instagram'>
               <FontAwesomeIcon
                 icon={faInstagram}
                 className="icon-size"
                 size="2x"
               />
+              </Link>
             </div>
-            <div className="footer-icon-inner-container bg-body-tertiary p-3">
+            <div className="footer-icon-inner-container">
+              <Link to='linkdin'>
               <FontAwesomeIcon
                 icon={faLinkedinIn}
                 className="icon-size"
                 size="2x"
               />
+              </Link>
             </div>
           </div>
         </Col>
       </Row>
-      <Row className="py-4">
-        <p className="text-center">
-          © <span className="text-warning">OHM ENERGY</span> SOLUTIONS 2024
+      <Row className="">
+        <p className="text-center mb-0">
+          © <span className="text-warning pe-2">OHM ENERGY </span> SOLUTIONS 2024
         </p>
       </Row>
+      </Container>
     </Container>
   );
 };
