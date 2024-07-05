@@ -19,11 +19,11 @@ const MainPage = () => {
       <div id="calculator">
         <Calculator />
       </div>
-      <div id="partners">
-        <Partners />
-      </div>
       <div id="projects">
         <ProjectsComponent />
+      </div>
+      <div id="partners">
+        <Partners />
       </div>
       <div id="comment">
         <CommentComponent />

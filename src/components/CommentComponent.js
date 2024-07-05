@@ -29,8 +29,8 @@ const CommentComponent = () => {
   return (
     <Container fluid className="comments-component">
       <Row className=" pb-5 comments-component-row">
-        <div className="d-flex justify-content-center w-100 py-5 comments-title-container">
-          <h5 className="text-center d-inline px-5 py-3">
+        <div className="d-flex justify-content-center w-100 py-0 comments-title-container">
+          <h5 className="text-center d-inline px-5 pt-4 pb-3 comments-main-title">
             COSTUMERS COMMENTS
           </h5>
         </div>

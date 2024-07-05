@@ -1,9 +1,9 @@
 :root {
   --background-color-while-image-loading: rgb(96, 96, 96);
   --partners-boxes-width: 100px;
-  --body-mine-background: rgb(235, 225, 225);
-  --body-background: rgb(245, 245, 240);
-  --button-background-yellow: #78766f !important;
+  --body-mine-background: #e9ebeb;
+  --body-background: #e9ebeb;
+  --button-background-yellow: #ecce65 !important;
   --button-text-yellow: #4a4a4a !important;
   --text-primary: grey;
   --text-secondary: light;
@@ -16,23 +16,24 @@
   --offcanvas-header-background: grey;
   --offcanvas-link-text: rgb(0, 0, 0);
   --offcanvas-title-text: black;
+  --contact-us-button: rgb(125, 99, 14);
   --flags-backrgound-color: rgba(252, 252, 252, 0.137);
   --border-yellow: #fecd12 !important;
   --partners-card-background-color: lightgrey;
-  --projects-card-p: black;
-  --projects-cards-title-color: yellow;
+  --projects-card-p: rgb(255, 255, 255);
+  --projects-cards-title-color: rgb(255, 255, 255);
   --fa-chevron-arrow-color: black;
-  --projects-card-body-background-color: grey;
-  --quete-comments-background-color: rgba(199, 199, 117, 0.177);
-  --quete-comments-text-color: black;
+  --projects-card-body-background-color: rgb(33, 37, 41);
+  --quete-comments-background-color: rgba(33, 37, 41);
+  --quete-comments-text-color: rgb(255, 255, 255);
   --comments-title-background-color: #ffc107;
-  --comments-title-text-color: #322705;
-  --quete-author-text-color: rgb(5, 0, 0);
+  --comments-title-text-color: #000000;
+  --quete-author-text-color: rgb(255, 255, 255);
   --instagram-icon-color: #e1306c !important;
   --facebook-linkdin-icon-color: rgb(4, 4, 74) !important;
   --footer-navbar-text-color: yellow;
   --footer-navbar-text-hover-color: rgb(244, 244, 204);
-  --footer-background-color: grey;
+  --footer-background-color: rgba(33, 37, 41);
   --footer-text-color: rgb(236, 224, 224);
   --footer-social-media-icons-background-color: #989898b1;
 
@@ -102,7 +103,8 @@ blockquote {
   line-height: 1.75;
 }
 
-.caption, .label {
+.caption,
+.label {
   font-size: 14px;
   line-height: 1.5;
 }
@@ -117,13 +119,17 @@ button {
   line-height: 1.6;
 }
 
-
-.App, .footer {
+.App,
+.footer {
   width: 100% !important;
   margin-left: 0px;
   margin-right: 0px;
   padding-left: var(--app-padding-sm-left-right) !important;
   padding-right: var(--app-padding-sm-left-right) !important;
+}
+
+.footer {
+  color: var(--footer-text-color)
 }
 
 .row {
@@ -147,6 +153,7 @@ h2 {
 }
 
 .main-page {
+  
 }
 
 /* navbar */
@@ -232,7 +239,8 @@ h2 {
 }
 
 .navbar-dropdown-icon {
-  /* padding-right: 10px; */
+  padding-right: 10px;
+  color: var(--quete-comments-background-color) !important;
 }
 
 .dropdown-toggle,
@@ -278,6 +286,9 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 3;
   /* margin: 0 !important; */
+}
+
+#mainpage1 {
 }
 
 .video-page-inner-container {
@@ -337,7 +348,7 @@ h2 {
 }
 
 .stats-inner-container img {
-  width: 80px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -526,7 +537,7 @@ h2 {
 #projects {
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 274px;
+  /* margin-top: 274px; */
 }
 
 .projects-carousel-link {
@@ -573,7 +584,7 @@ a {
 }
 
 .projects-container {
-  height: 300px;
+  height: 380px !important;
 }
 
 .slick-list,
@@ -590,7 +601,6 @@ a {
   padding-right: 0px !important;
 }
 
-
 .projects-container .slick-slider {
   height: 100%;
   display: flex !important;
@@ -598,6 +608,8 @@ a {
   align-items: center;
 }
 
+.projects-carousel-link {
+}
 
 .projects-container .slick-slider div:nth-child(1) {
   height: 100%;
@@ -649,8 +661,12 @@ a {
 }
 
 /* comments style */
+#comment {
+  margin-top: 273px;
+}
+
 .comments-component {
-  background-color: var(--comments-copmonent-background-color);
+  /* background-color: var(--comments-copmonent-background-color); */
   padding-left: 0px !important;
   padding-right: 0px !important;
   display: flex;
@@ -658,12 +674,12 @@ a {
   justify-content: center;
 }
 
-.comments-component-row {
-
+.comments-main-title {
+  margin-bottom: 0px;
 }
 
 .comments-title-container h5 {
-  background-color: var(--comments-title-background-color);
+  /* background-color: var(--comments-title-background-color); */
   color: var(--comments-title-text-color);
 }
 
@@ -671,7 +687,7 @@ a {
   box-shadow: none;
 }
 
-.comments-component-row .slick-slider{
+.comments-component-row .slick-slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -681,6 +697,14 @@ a {
   height: 250px;
 }
 
+.comments-multiitem-carousel-text-container h6 {
+  /* height: 250px; */
+  color: var(--quete-comments-text-color);
+}
+
+.font-italic {
+  font-style: italic;
+}
 
 .quete-text-container {
   background-color: var(--quete-comments-background-color);
@@ -711,7 +735,7 @@ a {
 }
 
 .quete-text-bottom::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -27px; /* Adjust to position shadow correctly */
@@ -723,8 +747,6 @@ a {
   border-bottom: 33px solid transparent;
   z-index: -1; /* Place the shadow behind the original triangle */
 }
-
-
 
 .multiitem-carousel-name-container h6 {
   /* margin-left: 60px; */
@@ -738,7 +760,6 @@ a {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-
 
 .footer-icon-inner-container {
   width: 50px;
@@ -824,7 +845,6 @@ a {
 .site-map-hr {
   height: 1px;
 }
-
 
 .footer-accordion-container {
   display: inline-flex;
@@ -921,22 +941,23 @@ footer p {
   cursor: default;
 }
 
-.footer-menu-info-container a p{
-  cursor: pointer !important; 
+.footer-menu-info-container a p {
+  cursor: pointer !important;
 }
 
-.footer-menu-info-container p{
-  padding: 8px 0px; 
+.footer-menu-info-container p {
+  padding: 8px 0px;
 }
 
 .footer-nav-inner .nav-link:nth-child(1) p {
   padding-top: 0px;
 }
 
- 
-
-.footer-menu-info-container a p, .footer-accordion button p, .footer.accordion button,
-.footer-menu-info-container a p:visited, .footer-accordion button p:visited {
+.footer-menu-info-container a p,
+.footer-accordion button p,
+.footer.accordion button,
+.footer-menu-info-container a p:visited,
+.footer-accordion button p:visited {
   margin-bottom: 0;
   color: var(--footer-navbar-text-color);
 }
@@ -945,13 +966,14 @@ footer p {
   margin-right: 20px;
 }
 
-.footer-menu-info-container a p:hover, .footer-accordion button:hover {
+.footer-menu-info-container a p:hover,
+.footer-accordion button:hover {
   background-color: #00000009;
 
   margin-bottom: 0;
 }
 
-.footer-site-map-p-container p{
+.footer-site-map-p-container p {
   margin-bottom: 0px;
 }
 
@@ -998,6 +1020,30 @@ footer p {
     flex-direction: column;
   } */
 
+  .stats-row-contaier {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .stats-icons-text-container {
+    width: 300px !important;
+  }
+
+  .stats-inner-container {
+    width: 100% !important;
+  }
+
+  .stats-text-container {
+    width: 100% !important;
+  }
+
+  .stats-text-container p{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
   .projects-container {
     height: 500px;
   }
@@ -1018,13 +1064,22 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .App, .footer {
+  #calculator,
+  .footer {
     padding-left: var(--app-padding-md-left-right);
     padding-right: var(--app-padding-md-left-right);
   }
 
   .App {
+    max-width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  #calculator, #projects, #comment {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar-container {
@@ -1057,12 +1112,11 @@ footer p {
     max-width: 1200px;
   }
 
-  
-.lang-toggle-container {
-  width: 80%;
-  justify-content: flex-end;
-  gap: 40px;
-}
+  .lang-toggle-container {
+    width: 80%;
+    justify-content: flex-end;
+    gap: 40px;
+  }
 
   .offcanvas-menu {
     width: 70%;
@@ -1097,14 +1151,13 @@ footer p {
   }
 
   .slick-dots {
-    padding-bottom: 16px !important;
+    /* padding-bottom: 16px !important; */
     /* bottom: -30px; */
   }
 
   .projects-container .slick-slider .slick-list {
     padding-bottom: 20px !important;
   }
-  
 }
 /* 
 @media (min-width: 1400px) {
@@ -1195,5 +1248,3 @@ footer p {
     transform: rotate(0deg);
   }
 }
-
-

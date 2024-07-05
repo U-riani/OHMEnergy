@@ -57,7 +57,7 @@ const MultiItemCarousel = (prop) => {
                   className={`project-img project-img-${i + 1}`}
                 />
                 <div className="projects-body-container px-1 px-sm-2 px-md-3 py-0 py-sm-1 py-md-2 py-lg-3">
-                  <h6 className="projects-title py-1 py-sm-2 mb-0">
+                  <h6 className="projects-title py-1 py-sm-2 mb-0 fw-bold">
                     Card Title
                   </h6>
                   <p className="projects-text mb-0 py-0 py-sm-1 py-md-2 py-ld-3">
@@ -80,8 +80,9 @@ const MultiItemCarousel = (prop) => {
                   <p className="mb-3 p-3">
                     <FontAwesomeIcon icon={faQuoteLeft} /> {item.text}
                   </p>
+                  <hr />
                   <div className="multiitem-carousel-name-container">
-                    <h6>My company</h6>
+                    <h6 className="font-italic">My company</h6>
                   </div>
                 </div>
                 {/* <div className="quete-text-bottom"></div> */}
