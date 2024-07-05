@@ -16,7 +16,7 @@
   --offcanvas-header-background: grey;
   --offcanvas-link-text: rgb(0, 0, 0);
   --offcanvas-title-text: black;
-  --contact-us-button: rgb(125, 99, 14);
+  --contact-us-button: #FFCC04;
   --flags-backrgound-color: rgba(252, 252, 252, 0.137);
   --border-yellow: #fecd12 !important;
   --partners-card-background-color: lightgrey;
@@ -31,7 +31,7 @@
   --quete-author-text-color: rgb(255, 255, 255);
   --instagram-icon-color: #e1306c !important;
   --facebook-linkdin-icon-color: rgb(4, 4, 74) !important;
-  --footer-navbar-text-color: yellow;
+  --footer-navbar-text-color: #FFCC04;
   --footer-navbar-text-hover-color: rgb(244, 244, 204);
   --footer-background-color: rgba(33, 37, 41);
   --footer-text-color: rgb(236, 224, 224);
@@ -162,7 +162,7 @@ h2 {
 }
 
 .contact-us-button {
-  background-color: var(--button-background-yellow) !important;
+  background-color: var(--contact-us-button) !important;
 }
 
 .logo-container {
@@ -353,12 +353,14 @@ h2 {
 }
 
 .calculator-page-container {
-  padding-left: 0% !important;
-  padding-right: 0% !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(33, 37, 41);
+  border-radius: 20px;
 }
 
 .calculator-input {
@@ -779,6 +781,7 @@ a {
 .footer-icon-inner-container:nth-child(2) a:hover {
   color: var(--instagram-icon-color);
 }
+
 .footer-icon-inner-container a:hover {
   color: var(--facebook-linkdin-icon-color);
   animation-name: linkAnimation;
@@ -786,6 +789,14 @@ a {
   animation-iteration-count: 1;
   animation-timing-function: linear;
   transition: color 0.3s ease;
+}
+
+.footer h4 {
+  font-size: 22px;
+}
+
+.footer p {
+  font-size: 14px;
 }
 
 .footer-map-inner-container {
@@ -872,6 +883,11 @@ a {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0.1rem;
+}
+
+.footer-accordion button::after {
+  background-color: #4a4a4a ;
+  color: var(--footer-text-color) !important;
 }
 
 .footer-nav-inner a {

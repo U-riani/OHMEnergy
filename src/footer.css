@@ -53,7 +53,7 @@
 
   .footer-address-menu-container {
     display: inline-block;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     padding-left: 50px;
   }
 }

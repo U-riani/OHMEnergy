@@ -17,7 +17,7 @@ const Calculator = () => {
   ];
 
   return (
-    <Container fluid className=" py-5 calculator-page-container page-container">
+    <Container fluid className=" mt-5 py-4 calculator-page-container page-container">
       <h2>Solar Power Plant Calculator</h2>
       <Row className="pt-4">
         <p>
