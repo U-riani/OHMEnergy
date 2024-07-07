@@ -8,7 +8,7 @@ const Partners = () => {
   const partners = [
     {
       name: "SMA Solar Technology AG",
-      logo: require("../images/partners/partner-1.jpg"),
+      logo: require("../images/partners/partner-1.png"),
     },
     {
       name: "Solar Technologies, Inc.",
@@ -37,7 +37,7 @@ const Partners = () => {
     },
     {
       name: "ESSD (Energy Saving Solutions & Design)",
-      logo: require("../images/partners/partner-9.jpeg"),
+      logo: require("../images/partners/partner-9.png"),
     },
     {
       name: "ESSD (Energy Saving Solutions & Design)",
@@ -74,7 +74,7 @@ const Partners = () => {
 
   return (
     <Container fluid className="py-3 px-0 d-flex flex-column align-items-center partners-container">
-      <Row className="d-flex justify-content-between  partners-row-1">
+      <Row className="d-flex justify-content-between partners-row-1 partners-row">
         {partners.filter((el, ind) => ind < 6).map((part, i) => (
           <div
             key={i}
@@ -112,7 +112,7 @@ const Partners = () => {
           </div>
         ))}
       </Row>
-      <Row className="d-flex justify-content-between">
+      <Row className="d-flex justify-content-between partners-row partners-row-2">
         {partners.filter((el, ind) => ind >= 6).map((part, i) => (
           <div
             key={i}

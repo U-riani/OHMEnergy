@@ -4,6 +4,24 @@
   justify-content: space-between;
 }
 
+.footer-site-map-address-text-container {
+  padding-bottom: 30px;
+}
+
+.footer-nav-inner .nav-link p, .footer-accordion p{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footer-accordion  {
+
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
+.accordion-button {
+}
+
 /* contact icons and text */
 .footer-site-map-contact-info-container {
   display: flex;
@@ -17,7 +35,7 @@
 }
 
 .footer-address-menu-container, .footer-working-hours-menu-container {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 
@@ -27,12 +45,33 @@
   justify-content: flex-start;
 }
 
-@media (min-width: 576px) {
+.footer-menu-info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px !important;
+  padding-bottom: 30px;
+}
+
+.footer-social-media-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 476px) {
   .footer-menu-info-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 5%;
+  }
+
+  .footer-social-media-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
   }
 
   .footer-site-map-container {
@@ -59,46 +98,14 @@
 }
 
 @media (min-width: 650px) {
-  .footer-working-hours-menu-container {
+  /* .footer-working-hours-menu-container {
     padding-left: 100px;
-  }
+  } */
 }
 
 @media (min-width: 676px) {
   .footer-address-menu-container {
     padding-right: 0%;
-  }
-}
-
-@media (min-width: 766px) {
-  .footer-working-hours-menu-container {
-    padding-left: 100px;
-  }
-}
-
-@media (min-width: 796px) {
-  .footer-menu-info-container {
-    display: grid;
-    grid-template: 1fr auto / auto  auto auto;
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-  }
-  
-
-  .footer-address-menu-container {
-    padding-left: 0px;
-    
-  }
-  .footer-working-hours-menu-container {
-    padding-left: 0px;
-    grid-area: 1 / 3 / 2 / 4;
-    justify-self: center;
-    
-  }
-
-  .footer-contact-menu-container {
-    grid-area: 1 / 3 / 2 / 4;
-    margin-top: 100%;
   }
 }
 
@@ -114,6 +121,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 10%;
   }
 
   .footer-working-hours-menu-container {

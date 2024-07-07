@@ -54,7 +54,7 @@ const Calculator = () => {
         <p className="py-2">
           Enter how much you pay for electricity every month, in {`GEL`}
         </p>
-        <Col sm={10} md={10} className="ps-0 ">
+        <Col sm={10} md={10} className="ps-0 px-0 pe-sm-1">
           <InputGroup className="d-flex flex-column flex-sm-row ">
             <Form.Control
               placeholder="GEL"
@@ -64,7 +64,7 @@ const Calculator = () => {
             />
           </InputGroup>
         </Col>
-        <Col sm={2} md={2} className="pe-0">
+        <Col sm={2} md={2} className="px-0 ps-sm-1">
           <Button
             className="w-100 w-md-25 px-0 p rounded-0 calculator-submit-button "
             variant=""

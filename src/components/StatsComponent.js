@@ -1,5 +1,5 @@
 import React from "react";
-import {  Container, Image, Row } from "react-bootstrap";
+import {  Container, Image } from "react-bootstrap";
 
 const StatsComponent = () => {
   const images = [
@@ -18,8 +18,8 @@ const StatsComponent = () => {
   ];
   return (
     <Container fluid className="mt-0 pt-0 stats-container py-0">
-      <Row className="bg-dark text-light  stats-row-contaier py-4">
-        <div  className="d-flex justify-content-center stats-icons-text-container">
+      <div className="bg-dark text-light  stats-row-contaier py-4">
+        <div  className=" stats-icons-text-container">
           <div className="stats-inner-container ">
             <Image src={images[0].src} className=""/>
             <div className="stats-text-container pt-2">
@@ -28,8 +28,8 @@ const StatsComponent = () => {
             </div>
           </div>
         </div>
-        <div  className="stats-icons-text-container d-flex justify-content-center">
-          <div className="stats-inner-container w-100 ">
+        <div  className="stats-icons-text-container ">
+          <div className="stats-inner-container ">
           <Image src={images[1].src} />
           <div className="stats-text-container pt-2">
               <h2>2500+</h2>
@@ -37,16 +37,16 @@ const StatsComponent = () => {
             </div>
           </div>
         </div>
-        <div  className=" stats-icons-text-container d-flex justify-content-center">
+        <div  className=" stats-icons-text-container ">
           <div className="stats-inner-container ">
           <Image src={images[2].src} />
           <div className="stats-text-container pt-2">
               <h2>70+</h2>
-              <p>mWh Produced</p>
+              <p className="text-center">mWh Produced</p>
             </div>
           </div>
         </div>
-      </Row>
+      </div>
     </Container>
   );
 };

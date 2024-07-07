@@ -14,7 +14,7 @@ const ProjectsComponent = () => {
   ];
 
   return (
-    <Container fluid className="py-5 border-top" id="projects">
+    <Container fluid className="py-5 projects" >
       <Row className="projects-container py-0 d-flex justify-content-evenly mx-0 px-0">
         <MultiItemCarousel projects={projects} />
       </Row>

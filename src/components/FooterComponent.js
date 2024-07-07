@@ -71,18 +71,18 @@ const FooterComponent = () => {
                       <p>PARTNERS</p>
                     </Nav.Link>
                     <Nav.Link className="one-line-link">
-                      <p>SOLAR CALCULATOR</p>
+                      <p className="pb-0">SOLAR CALCULATOR</p>
                     </Nav.Link>
                   </Nav>
                 </div>
               </div>
             </div>
-            <div className="footer-address-menu-container">
+            <div className="footer-address-working-hours-menu-container">
               <div className="footer-site-map-title-container">
                 <h4>Address</h4>
                 <hr />
               </div>
-              <div className="footer-site-map-p-container footer-site-map-address-text-container pb-4">
+              <div className="footer-site-map-p-container footer-site-map-address-text-container">
                 <p>11a Paliashvili Street</p>
                 <p>Tbilisi, Georgia</p>
               </div>
@@ -112,7 +112,7 @@ const FooterComponent = () => {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="footer-social-media-container">
                 <div className="text-center pb-2">
                   <h3>Follow us</h3>
                 </div>
