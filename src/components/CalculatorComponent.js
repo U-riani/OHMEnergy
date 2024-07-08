@@ -16,6 +16,10 @@ const Calculator = () => {
     { name: "For a Company", value: "2" },
   ];
 
+
+
+  // console.log(radioValue)
+
   return (
     <Container fluid className=" mt-5 py-4 calculator-page-container page-container">
       <h2>Solar Power Plant Calculator</h2>
@@ -77,7 +81,7 @@ const Calculator = () => {
       <Row className="">
         <hr className="calculator-hr mt-5" />
         <h2 className="py-4 mb-0 fw-bold">Calculation:</h2>
-        <CalcComponent />
+        <CalcComponent radioValue={radioValue}/>
       </Row>
     </Container>
   );

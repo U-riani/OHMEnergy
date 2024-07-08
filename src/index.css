@@ -1266,3 +1266,34 @@ footer p {
     transform: rotate(0deg);
   }
 }
+
+
+
+/* fb chat style */
+/* styles.css */
+
+/* Adjust the position of the chat plugin */
+.fb-customerchat {
+  height: 100px;
+  width: 200px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure it's above other elements */
+  background-color: #e1306c;
+}
+
+/* Style the chat icon */
+.fb-customerchat iframe {
+  width: 300px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border: none; /* Remove border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+  border-radius: 30px; /* Optional: Rounded corners */
+}
+
+/* Style the chat icon when hovered */
+.fb-customerchat iframe:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Example hover effect */
+  transform: scale(1.05); /* Example hover effect */
+}

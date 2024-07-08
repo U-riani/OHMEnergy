@@ -5,6 +5,7 @@ import Navbar from "./NavbarComponent";
 import { Container } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import FooterComponent from "./FooterComponent";
+import FacebookChat from "./FacebookChat";
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
         <Outlet />
       </Container>
       {/* <Footer /> */}
+      <FacebookChat />
       {<FooterComponent />}
     </>
   );
