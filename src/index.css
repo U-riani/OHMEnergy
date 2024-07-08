@@ -13,6 +13,7 @@
   --link-background: white;
   --link-text: orangered;
   --navbar-dropdown-svg-color: yellow;
+  --offcanvas-body-background-color: rgb(250, 250, 250);
   --offcanvas-header-background: grey;
   --offcanvas-link-text: rgb(0, 0, 0);
   --offcanvas-title-text: black;
@@ -47,7 +48,8 @@
 
   /* override color */
   --bs-body-bg: transparent !important;
-
+  --bs-accordion-btn-icon: color:var(--footer-navbar-text-color) !important;
+  
   background-image: var(--body-background);
 }
 
@@ -184,6 +186,10 @@ h2 {
   gap: 1px;
 }
 
+.navbar-drop-down-1400px .dropdown-menu {
+  background-color: var(--offcanvas-body-background-color);
+}
+
 .contact-us-button {
   background-color: var(--contact-us-button) !important;
 }
@@ -222,6 +228,10 @@ h2 {
 .offcanvas-menu {
   width: 250px !important;
   /* background-color: rgba(255, 255, 255, 0.408) !important; */
+}
+
+.offcanvas-body-background-color {
+  background-color: var(--offcanvas-body-background-color);
 }
 
 .offcanvas-header-background-color {
@@ -474,7 +484,6 @@ h2 {
   filter: sepia(0%) brightness(1) grayscale(0) invert(0%) !important;
   /* filter: brightness(1); */
 }
-
 
 .partners-card {
   position: relative;
@@ -758,7 +767,7 @@ a {
   font-style: italic;
 }
 
-.quete-text-container {
+.comments-item-inner-container {
   background-color: var(--quete-comments-background-color);
   color: var(--quete-comments-text-color);
   box-shadow: 3px 2px 5px rgb(157, 157, 157);
@@ -770,41 +779,32 @@ a {
   justify-content: space-around;
 }
 
-.comments-author {
-  font-size: 16px !important;
-}
-
-.quete-text-bottom {
-  position: relative;
-  margin-top: 0px;
-  width: 0px;
-  height: 0px;
-  margin-left: 40px;
-  /* border-color: rgb(195, 107, 107); */
-  border-left: 30px solid var(--quete-comments-background-color);
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-}
-
-.quete-text-bottom::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -27px; /* Adjust to position shadow correctly */
-  width: 0;
-  height: 0;
-  border-left: 30px solid rgb(157, 157, 157); /* Shadow color */
-  filter: blur(3px);
-  border-right: 25px solid transparent;
-  border-bottom: 33px solid transparent;
-  z-index: -1; /* Place the shadow behind the original triangle */
-}
-
-.multiitem-carousel-name-container h6 {
-  /* margin-left: 60px; */
-  color: var(--quete-author-text-color);
+.comment-item-container {
+  height: 250px;
   text-align: center;
-  /* padding-bottom: 10px; */
+}
+
+.comment-p-container {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.comment-p-container p {
+  width: 100%;
+  font-weight: 300;
+  word-break: break-all;
+  text-align-last: center;
+  color: var(--quete-comments-text-color);
+}
+
+.comment-item-container {
+  height: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.comment-company-name h6 {
+  font-style: italic;
 }
 
 /* footer styles */
@@ -930,11 +930,14 @@ a {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0.1rem;
+  box-shadow: none !important;
 }
 
 .footer-accordion button::after {
-  background-color: #4a4a4a;
-  color: var(--footer-text-color) !important;
+  /* background-color: #4a4a4a; */
+  background-image: url('./images/accordionButton/arrowIcon.svg');
+  fill: red !important;
+  /* --bs-accordion-btn-icon: var(--footer-navbar-text-color); */
   /* filter: brightness(100); */
 }
 
@@ -943,6 +946,22 @@ a {
   /* width: 50px; */
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.accordion-header {
+  padding-top: 10px !important;
+}
+
+.footer-nav-inner a {
+  padding-top: 10px;
+}
+
+.footer-about-us {
+  padding-top: 8px !important;
+}
+
+.footer-large-scale {
+  padding-top: 10px !important;
 }
 
 /* .footer-nav-inner a:nth-child(4) {
@@ -1035,6 +1054,10 @@ footer p {
 
 .footer-site-map-p-container p {
   margin-bottom: 0px;
+}
+
+.footer-large-scale {
+  padding-top: 10px !important;
 }
 
 @media (min-width: 76px) {
@@ -1149,7 +1172,7 @@ footer p {
     order: 1;
   }
 
-  .contact-menu a{
+  .contact-menu a {
     width: 108px;
     order: 1;
     text-wrap: nowrap;

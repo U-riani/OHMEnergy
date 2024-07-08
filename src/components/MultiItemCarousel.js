@@ -70,22 +70,16 @@ const MultiItemCarousel = (prop) => {
         ))}
       {prop.commentData &&
         prop.commentData.map((item, i) => (
-          <div className="item-container p-2" key={i}>
+          <div className="comment-item-container p-2" key={i}>
             <div className="item-inner-container comments-item-inner-container">
-              <div className="comments-multiitem-carousel-text-container">
-                <div className="quete-text-container mb-0">
-                <div className="multiitem-carousel-name-container">
-                  <h6 className="fw-bold comments-author">{item.name}</h6>
-                </div>
-                  <p className="mb-3 p-3">
-                    <FontAwesomeIcon icon={faQuoteLeft} /> {item.text}
-                  </p>
-                  <hr />
-                  <div className="multiitem-carousel-name-container">
-                    <h6 className="font-italic">My company</h6>
-                  </div>
-                </div>
-                {/* <div className="quete-text-bottom"></div> */}
+              <div className="comment-title-container">
+                <h5>{item.name}</h5>
+              </div>
+              <div className="comment-p-container">
+                <p><span><FontAwesomeIcon icon={faQuoteLeft} /></span> {item.text}</p>
+              </div>
+              <div className="comment-company-name">
+                <h6>dfdsfsd</h6>
               </div>
             </div>
           </div>

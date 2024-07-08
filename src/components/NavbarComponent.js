@@ -78,6 +78,7 @@ const NavbarComponent = () => {
               className="border-0 close-open-menu"
             />
             <Navbar.Offcanvas
+            scroll={true}
               id={`offcanvasNavbar-expand-sm`}
               aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
               placement="end"

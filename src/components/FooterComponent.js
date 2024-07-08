@@ -35,7 +35,7 @@ const FooterComponent = () => {
               </div> */}
                 <div className="footer-site-map-menu-container">
                   <Nav className="footer-nav-inner">
-                    <Nav.Link>
+                    <Nav.Link className="footer-about-us">
                       <p>ABOUT US</p>
                     </Nav.Link>
                     {/* <NavDropdown title="SERViCES" id="basic-nav-dropdown" className="d-inline-flex p-relative">
@@ -50,9 +50,10 @@ const FooterComponent = () => {
                       <Accordion.Item eventKey="0">
                         <Accordion.Header className="footer-accordion">
                           <p>OUR PROJECTS</p>
+                          
                         </Accordion.Header>
                         <Accordion.Body className="py-0 ps-2 pe-0 d-flex flex-column">
-                          <Nav.Link className="py-0 pe-0">
+                          <Nav.Link className=" pe-0 footer-large-scale">
                             <p>LARGE SCALE</p>
                           </Nav.Link>
                           <Nav.Link className=" pe-0">
