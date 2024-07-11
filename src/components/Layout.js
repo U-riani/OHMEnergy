@@ -15,7 +15,7 @@ const Layout = () => {
         <Outlet />
       </Container>
       {/* <Footer /> */}
-      <FacebookChat />
+      {/* <FacebookChat /> */}
       {<FooterComponent />}
     </>
   );
