@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, FloatingLabel, Row } from "react-bootstrap";
 import { useState } from "react";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
@@ -16,12 +16,18 @@ const Calculator = () => {
     { name: "For a Company", value: "2" },
   ];
 
-
+  // const regionRadios = [
+  //   { name: "on ground", value: "1" },
+  //   { name: "on roof", value: "2" },
+  // ];
 
   // console.log(radioValue)
 
   return (
-    <Container fluid className=" mt-5 py-4 calculator-page-container page-container">
+    <Container
+      fluid
+      className=" mt-5 py-4 calculator-page-container page-container"
+    >
       <h2>Solar Power Plant Calculator</h2>
       <Row className="pt-4">
         <p>
@@ -53,6 +59,26 @@ const Calculator = () => {
           ))}
         </ButtonGroup>
       </Row>
+      <Row>
+        <Col sm={6}>
+          <FloatingLabel
+            controlId="floatingSelectGrid"
+            label="Select Region"
+            className="my-4 px-0"
+          >
+            <Form.Select aria-label="Floating label select example">
+              {/* <option>Open this select menu</option> */}
+              <option value="1">Tbilisi</option>
+              <option value="2">Adjara</option>
+              <option value="3">Kakheti</option>
+              <option value="3">Imereti</option>
+              <option value="3">Racha</option>
+            </Form.Select>
+          </FloatingLabel>
+        </Col>
+        
+      </Row>
+
       <Row className="border  pt-4">
         <h2 className="py-2 fw-bold">Monthly cost:</h2>
         <p className="py-2">
@@ -81,7 +107,7 @@ const Calculator = () => {
       <Row className="">
         <hr className="calculator-hr mt-5" />
         <h2 className="py-4 mb-0 fw-bold">Calculation:</h2>
-        <CalcComponent radioValue={radioValue}/>
+        <CalcComponent radioValue={radioValue} />
       </Row>
     </Container>
   );

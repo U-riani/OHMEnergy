@@ -1,7 +1,7 @@
 .footer-site-map-logo-menu-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-site-map-address-text-container {
@@ -26,12 +26,20 @@
 .footer-site-map-contact-info-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+}
+
+.footer-site-map-title-container h4 {
+  text-align: center;
 }
 
 .footer-site-map-contact-info-container p {
   margin: 0;
+}
+
+.footer-site-map-p-container p {
+  text-align: center;
 }
 
 .footer-address-menu-container, .footer-working-hours-menu-container {
@@ -59,6 +67,19 @@
 }
 
 @media (min-width: 476px) {
+  .footer-site-map-contact-info-container {
+    justify-content: flex-start;
+
+  }
+  
+  .footer-site-map-title-container h4 {
+    text-align: left;
+  }
+
+  .footer-site-map-p-container p {
+    text-align: left;
+  }
+  
   .footer-menu-info-container {
     display: flex;
     flex-direction: row;
@@ -88,6 +109,7 @@
 
   .footer-site-map-logo-container {
     padding-right: 20px;
+    
   }
 
   .footer-address-menu-container {

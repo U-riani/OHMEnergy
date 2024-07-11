@@ -9,6 +9,8 @@ import {
   faChevronLeft,
   faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -36,7 +38,7 @@ const MultiItemCarousel = (prop) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -80,6 +82,27 @@ const MultiItemCarousel = (prop) => {
               </div>
               <div className="comment-company-name">
                 <h6>dfdsfsd</h6>
+              </div>
+            </div>
+          </div>
+        ))}
+      {prop.employs &&
+        prop.employs.map((item, i) => (
+          <div className="employ-item-container p-2" key={i}>
+            <div className="employ-inner-container">
+              <div className="employ-img-container">
+                <img src={item.img} alt="" className="emply-img" />
+              </div>
+              <div className="employ-name-linkdin-container">
+                <div className="emply-name-position-container">
+                  <h6>{item.name}</h6>
+                  <p>{item.position}</p>
+                </div>
+                <div className="emply-linkdin">
+                  <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
