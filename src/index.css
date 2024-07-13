@@ -424,6 +424,10 @@ h2 {
   border-color: var(--button-background-yellow);
 }
 
+.btn-group>:not(.btn-check:first-child)+.btn {
+  margin-left: 0px !important;
+}
+
 .calculator-submit-button {
   background-color: var(--button-background-yellow) !important;
   color: var(--button-text-yellow) !important;
@@ -441,6 +445,56 @@ h2 {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+
+
+
+.regions-panels-col {
+  /* padding: 0px !important; */
+  border: 1px solid rgb(192, 192, 192);
+  margin-top: 20px !important;
+}
+
+.regions-panels-form {
+  padding: 10px 0px 10px 0px;
+}
+
+.regions-panels-title-container {
+  padding-bottom: 10px;
+}
+
+.panel-location-radio-container {
+  padding: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.155);
+  border-radius: 10px;
+}
+
+.form-check-input {
+  border-color: #9f9f9f !important;
+  margin-top: 6px !important;
+}
+
+/* .panel-location-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18px;
+}
+
+.panel-location-title {
+  height: 100%;
+  transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+.panel-location-radio-container .form-check {
+  display: flex;
+  align-items: center;
+  gap: 7px
+} */
 
 #partners {
   background-color: var(--partners-background-color);
@@ -1142,6 +1196,20 @@ footer p {
   }
 }
 
+@media (min-width: 553px) {
+  .panel-location-radio-container, .region-select-container  {
+    height: 39px !important;
+  }
+
+  .panel-location-radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px
+  }
+}
+
 @media (min-width: 768px) {
   .stats-row-contaier {
     gap: 20%;
@@ -1154,6 +1222,10 @@ footer p {
   .stats-text-container p {
     text-align: center;
     margin-bottom: 0px;
+  }
+
+  .calculator-person-company-button {
+    width: 50%;
   }
 
   .projects-container {
@@ -1263,6 +1335,44 @@ footer p {
     width: 70%;
   }
 
+  .panels-location-container {
+    margin-top: 20px;
+  }
+
+  .panel-location-radio-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .region-panel-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .regions-panels-col {
+    border: none;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .select-region-col {
+    padding-right: 4px !important;
+  }
+
+  .panels-col {
+    padding-left: 4px !important;
+  }
+
+  .regions-panels-form {
+    border: 1px solid rgb(192, 192, 192);
+    margin-top: 20px !important;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .regions-panels-form {
+    padding: 10px;
+  }
+
   .footer-working-hours-container,
   .footer-contact-container {
     justify-content: center !important;
@@ -1314,6 +1424,17 @@ footer p {
     width: 47% !important;
   }
 }
+
+@media (min-width: 1010px) {
+  .select-region-col {
+    padding-right: 10px !important;
+  }
+
+  .panels-col {
+    padding-left: 10px !important;
+  }
+}
+
 
 @media (min-width: 1090px) {
   .offcanvas-full-navbar {
