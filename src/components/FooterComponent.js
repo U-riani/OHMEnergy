@@ -15,7 +15,7 @@ const FooterComponent = () => {
   return (
     <Container
       fluid
-      className="footer d-flex flex-column justify-content-center align-center px-0 py-5"
+      className="footer d-flex flex-column justify-content-center align-center px-0"
     >
       <Container fluid className="footer-inner-container">
         <Row className=" border-bottom ">

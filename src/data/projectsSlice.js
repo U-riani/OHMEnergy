@@ -43,6 +43,7 @@ const initialState = [
   },
 ];
 
+
 export const projectsSlice = createSlice({
   name: "projects",
   initialState,
@@ -52,6 +53,8 @@ export const projectsSlice = createSlice({
     },
   },
 });
+
+
 
 export const { getAllProjects } = projectsSlice.actions;
 

@@ -15,46 +15,34 @@ const AboutsUs = () => {
 
   const employs = [
     {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
+      name: " ირაკლი უბილავა",
+      position: "მმართველი პარტნიორი",
+      img: require("../images/aboutus/employsPhotos/irakli-ubilava.jpg"),
       linkdinURL: "linkdin.com",
     },
     {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
+      name: "ირაკლი ბაბუნაშვილი",
+      position: "ოპერაციების ხელმძღვანელი",
+      img: require("../images/aboutus/employsPhotos/irakli-babunashvili.jpeg"),
       linkdinURL: "linkdin.com",
     },
     {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
+      name: "დავით მარხულია",
+      position: "გაყიდვების ხელმძღვანელი",
+      img: require("../images/aboutus/employsPhotos/david-marxulia.jpeg"),
       linkdinURL: "linkdin.com",
     },
     {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
-      linkdinURL: "linkdin.com",
-    },
-    {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
-      linkdinURL: "linkdin.com",
-    },
-    {
-      name: "Sevak Gevorgyan",
-      position: "CEO",
-      img: require("../images/aboutus/employsPhotos/whatsapp-image-2020-11-26-at-115013.jpeg"),
+      name: "დავით ბარდაველიძე",
+      position: "გაყიდვების ხელმძღვანელი",
+      img: require("../images/aboutus/employsPhotos/david-bardavelidze.jpeg"),
       linkdinURL: "linkdin.com",
     },
   ];
   return (
     <Container fluid className="about-us-container">
       <Row className="about-us-row about-us-row-1 pb-5">
-        <div className="about-us-title py-5">
+        <div className="about-us-title">
           <h3>About Us</h3>
         </div>
         <div className="about-us-img-text-container about-us-img-text-container-1">
@@ -71,7 +59,7 @@ const AboutsUs = () => {
           </div>
           <div className="about-us-img-1-container">
             <div className="about-us-img-1-inner-container">
-              <img src={images[0].image1} className="about-us-img-1" alt=""/>
+              <img src={images[0].image1} className="about-us-img-1" alt="" />
             </div>
           </div>
         </div>
@@ -92,7 +80,7 @@ const AboutsUs = () => {
           </div>
           <div className="about-us-img-1-container">
             <div className="about-us-img-1-inner-container">
-              <img src={images[1].image1} className="about-us-img-1" alt=""/>
+              <img src={images[1].image1} className="about-us-img-1" alt="" />
             </div>
           </div>
         </div>

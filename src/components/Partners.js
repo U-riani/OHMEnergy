@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { Card, Container, Row } from "react-bootstrap";
 import Partner11 from "../images/partners/partner-11";
+// import useScreenWidth from "../hooks/useScreenWidth";
 
 const Partners = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+  
   const partners = [
     {
       name: "SMA Solar Technology AG",
@@ -56,21 +56,10 @@ const Partners = () => {
       logo: require("../images/partners/partner-13.png"),
     },
   ];
+  
+  // const partnersNum = partners.length;
+  // const screenWidth = useScreenWidth();
 
-  const partnersNum = partners.length;
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener on unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [screenWidth, partnersNum]);
 
   return (
     <Container fluid className="py-3 px-0 d-flex flex-column align-items-center partners-container">

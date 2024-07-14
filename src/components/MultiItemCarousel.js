@@ -13,6 +13,7 @@ import {
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useScreenWidth from "../hooks/useScreenWidth";
 
 // Custom arrow components
 const NextArrow = ({ onClick }) => {
@@ -32,11 +33,17 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const MultiItemCarousel = (prop) => {
+
+  const screenWidth = useScreenWidth();
+
+
+
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: screenWidth < 400 ? 1 : screenWidth < 600 ? 2 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -91,14 +98,14 @@ const MultiItemCarousel = (prop) => {
           <div className="employ-item-container p-2" key={i}>
             <div className="employ-inner-container">
               <div className="employ-img-container">
-                <img src={item.img} alt="" className="emply-img" />
+                <img src={item.img} alt="" className="employ-img" />
               </div>
               <div className="employ-name-linkdin-container">
-                <div className="emply-name-position-container">
+                <div className="employ-name-position-container">
                   <h6>{item.name}</h6>
                   <p>{item.position}</p>
                 </div>
-                <div className="emply-linkdin">
+                <div className="employ-linkdin">
                   <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} />
                   </a>

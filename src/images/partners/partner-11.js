@@ -1,3 +1,4 @@
+// Partner11.js
 import React from "react";
 
 const Partner11 = () => (
