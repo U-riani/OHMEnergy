@@ -1,46 +1,63 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import {  useSelector } from "react-redux";
+import React, { useState } from "react";
+import { Container, Row } from "react-bootstrap";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import ToggleButton from "react-bootstrap/ToggleButton";
+import ProjectsPageComponent from "../components/ProjectsPageComponent";
+import useFilteredProjectsHook from "../hooks/useFilteredProjectsHook";
 
 const ProjectPage = () => {
-  const projects = useSelector((state) => state.projects);
-
-  console.log(projects);
-
-  const handleScroll = (e) => {
-    const element = document.getElementById("9");
-    if (element) {
-      console.log(element.getBoundingClientRect(), window.scrollY);
-    }
+  
+  const radios = [
+    { name: "Large Scale", value: "large scale" },
+    { name: "Comercial", value: "comercial" },
+    { name: "Residential", value: "residential" },
+  ];
+  const [radioValue, setRadioValue] = useState("large scale");
+  const filteredProjects = useFilteredProjectsHook(radioValue)
+  
+  
+  const handleToggleClick = (e) => {
+    setRadioValue(e.currentTarget.value);
+    // projects.filter((project) => project.type === radioValue);
+    // console.log(projects);
+    // console.log(filteredProjects);
   };
-
-  const handleClick = () => {
-    const element = document.getElementById("9");
-    if (element) {
-      const yOffset = -70; // Adjust this value to match your navbar height
-      const y =
-        element.getBoundingClientRect().top + window.scrollY + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   return (
-    <Container>
-      <Row>
-        {projects.map((proj, i) => (
-          <Col sm={12} key={i} id={i + 1} style={{ height: "500px" }}>
-            <h1>{proj.name}</h1>
-            <p>{proj.description}</p>
-            <button onClick={handleClick}>scroll</button>
-          </Col>
-        ))}
+    <Container fluid className="projects-page-container">
+      <Row className="projects-page-row projects-page-row-1">
+        <div className="projects-page-title">
+          <h5>Our Projects</h5>
+        </div>
+      </Row>
+      <Row className="projects-page-row projects-page-row-2">
+        <ButtonGroup className="d-flex flex-column flex-sm-row px-0 projects-page-btn-group">
+          {radios.map((radio, i) => (
+            <ToggleButton
+              key={i}
+              id={`radio-${i}`}
+              type="radio"
+              // variant={idx % 2 ? "outline-success" : "outline-danger"}
+              variant={""}
+              name="radio"
+              className={`text-dark projects-page-toggle-button ${
+                radioValue === radio.value
+                  ? "projects-page-toggle-button-selected"
+                  : ""
+              }`}
+              value={radio.value}
+              checked={radioValue === radio.value}
+              onChange={(e) => handleToggleClick(e)}
+            >
+              {radio.name}
+            </ToggleButton>
+          ))}
+        </ButtonGroup>
+      </Row>
+      <Row className="projects-page-row projects-page-row-1">
+        {filteredProjects && (
+          <ProjectsPageComponent projects={filteredProjects} />
+        )}
       </Row>
     </Container>
   );

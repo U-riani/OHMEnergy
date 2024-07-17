@@ -27,7 +27,7 @@ const CalcComponent = ({ radioValue }) => {
     </div>
   );
 
-  console.log(radioValue);
+  // console.log(radioValue);
   return (
     <div className="calcComponent-container">
      {radioValue === '1' ? forPerson : forCompany}

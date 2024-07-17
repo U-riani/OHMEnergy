@@ -6,12 +6,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { geo, arm, usa, rus, logo } from "../images/flags/flags";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHourglassHalf, faSolarPanel, faHouse } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHourglassHalf, faSolarPanel, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarComponent = () => {
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -106,7 +106,10 @@ const NavbarComponent = () => {
                   <Nav.Link as={Link} to="/about-us">
                     ABOUT US
                   </Nav.Link>
-                  <NavDropdown
+                  <Nav.Link as={Link} to="/projects">
+                    PROJECTS
+                  </Nav.Link>
+                  {/* <NavDropdown
                     title="OUR PROJECTS"
                     id="basic-nav-dropdown"
                     className="menu-drop-down-item navbar-drop-down-1400px"
@@ -131,7 +134,7 @@ const NavbarComponent = () => {
                     >
                       <FontAwesomeIcon icon={faHouse} className="navbar-dropdown-icon" /><p>Residential</p>
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                   <Nav.Link as={Link} to="/blog">
                     BLOG
                   </Nav.Link>
