@@ -40,6 +40,7 @@ const SingleProjectPage = () => {
               </div>
             </div>
           </div>
+          
           <Row className="single-page-row single-page-row-2">
             <div className="single-page-description-container">
               <h5>Description</h5>
@@ -50,10 +51,10 @@ const SingleProjectPage = () => {
                 
                 src="https://www.youtube.com/embed/RAO_aOzBItE"
                 title="Large scale solar power plant with the power of 3 MW | OHM ENERGY | Armenia #Solar #pv #OHM"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
           </Row>

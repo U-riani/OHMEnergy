@@ -20,7 +20,7 @@ const ProjectsPageComponent = ({ projects }) => {
             <Link to={`/projects/${project.name}`} className="projects-page-project-text-container">
               <div className="projects-page-projects-inner-container">
                 <h4>{project.name}</h4>
-                <p>{project.description}</p>
+                <h4>{project.kw}</h4>
               </div>
             </Link>
           </div>

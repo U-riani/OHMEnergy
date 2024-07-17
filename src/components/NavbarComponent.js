@@ -135,9 +135,9 @@ const NavbarComponent = () => {
                       <FontAwesomeIcon icon={faHouse} className="navbar-dropdown-icon" /><p>Residential</p>
                     </NavDropdown.Item>
                   </NavDropdown> */}
-                  <Nav.Link as={Link} to="/blog">
+                  {/* <Nav.Link as={Link} to="/blog">
                     BLOG
-                  </Nav.Link>
+                  </Nav.Link> */}
 
                   <Nav.Link as={Link} to="/partners">
                     PARTNERS
