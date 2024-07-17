@@ -12,15 +12,15 @@ const SingleProjectPage = () => {
     state.projects.find((proj) => proj.name === projectId)
   );
   const filteredProjects = useFilteredProjectsHook(project.type);
-  
+
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [projectId])
+    window.scrollTo(0, 0);
+  }, [projectId]);
 
   return (
     <Container fluid className="single-project-container">
       {project ? (
-        <Row className="single-page-row">
+        <Row className="single-page-row-container">
           <div className="single-page-row-1-inner-container">
             <div className="single-page-main-image-container">
               <img
@@ -41,11 +41,28 @@ const SingleProjectPage = () => {
             </div>
           </div>
           <Row className="single-page-row single-page-row-2">
-            <Col className="single-page-row-2-col">
+            <div className="single-page-description-container">
+              <h5>Description</h5>
+              <p>{project.description}</p>
+            </div>
+            <div className="single-page-video-container">
+              <iframe
+                
+                src="https://www.youtube.com/embed/RAO_aOzBItE"
+                title="Large scale solar power plant with the power of 3 MW | OHM ENERGY | Armenia #Solar #pv #OHM"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </Row>
+          <Row className="single-page-row single-page-row-3">
+            <Col className="single-page-row-3-col">
               <img src={project.imageSrc} alt="" />
             </Col>
           </Row>
-          <Row className="py-5 single-page-carousel-row">
+          <Row className="py-5 single-page-carousel-row single-page-row">
             <h6>{project.type} projects</h6>
             <MultiItemCarousel projects={filteredProjects} />
           </Row>

@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     name: "project-1",
-    description: "lorem ipsum",
+    description:
+      "lorem  dsvdsv dvdsv dsvdsvdsvdsv dsvdsvdsv vds dsvds vdsvds vdsv vdsv dsvdsv vdsvdsvdsv dvdlvdmvldsmvdsvdsv dvds vdsv dsvds vdsv ds vds vdsvdsvdsvdvipsum",
     type: "large scale",
     imageSrc: require("../images/projects/project-1.jpg"),
   },
@@ -107,19 +108,23 @@ export const projectsSlice = createSlice({
       return state;
     },
     getTypeProjects: (state, action) => {
-      console.log(action.payload)
+      console.log(action.payload);
       return state.filter((project) => project.type === action.payload);
     },
     getLargeScaleProjects: (state) => {
-      return state.filter(project => project.type === 'large scale')
+      return state.filter((project) => project.type === "large scale");
     },
     getComercialProjects: (state) => {
-      return state.filter(project => project.type === 'comercial')
-    }
+      return state.filter((project) => project.type === "comercial");
+    },
   },
 });
 
-
-export const { getAllProjects, getTypeProjects, getLargeScaleProjects, getComercialProjects } = projectsSlice.actions;
+export const {
+  getAllProjects,
+  getTypeProjects,
+  getLargeScaleProjects,
+  getComercialProjects,
+} = projectsSlice.actions;
 
 export default projectsSlice.reducer;
