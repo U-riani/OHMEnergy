@@ -1,7 +1,7 @@
 import React from "react";
-import { Container,  Row, NavLink } from "react-bootstrap";
+import { Container, Row, } from "react-bootstrap";
 import VideoComponent from "../../components/VideoComponent";
-
+import { Link } from "react-router-dom";
 
 const MainPage1 = () => {
   return (
@@ -15,7 +15,14 @@ const MainPage1 = () => {
           <div className="video-text p-absolute-center">
             <h1 className="text text-light fs-1">OHM ENERGY</h1>
             <hr />
-            <NavLink href="/projects" className="text-light fs-3 border border-2 py-2 px-3">All Projects</NavLink>
+
+            <Link
+              as={Link}
+              to="/projects"
+              className="text-light fs-3 border border-2 py-2 px-3"
+            >
+              Alll Projects
+            </Link>
             {/* <Link to={'/projects'}>All Projects</Link> */}
             {/* <p className="text text-light">describe 1</p>
             <p className="text text-light">describe 2</p>
