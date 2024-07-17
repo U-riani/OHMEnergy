@@ -45,7 +45,7 @@ const MultiItemCarousel = (prop) => {
     speed: 500,
     slidesToShow: screenWidth < 400 ? 1 : screenWidth < 600 ? 2 : 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
