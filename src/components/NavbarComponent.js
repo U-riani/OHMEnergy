@@ -11,7 +11,7 @@ import { geo, arm, usa, rus, logo } from "../images/flags/flags";
 
 const NavbarComponent = () => {
   const location = useLocation();
-  // console.log(location);
+  console.log(location);
 
   useEffect(() => {
     const handleHashChange = () => {

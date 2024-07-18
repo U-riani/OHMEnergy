@@ -17,8 +17,8 @@ const StatsComponent = () => {
     },
   ];
   return (
-    <Container fluid className="mt-0 pt-0 stats-container py-0">
-      <div className="bg-dark text-light  stats-row-contaier py-4">
+    <Container fluid className="mt-0 pt-0 bg-dark  stats-container py-0">
+      <div className="text-light  stats-row-contaier py-4">
         <div  className=" stats-icons-text-container">
           <div className="stats-inner-container ">
             <Image src={images[0].src} className=""/>

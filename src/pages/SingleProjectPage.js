@@ -21,13 +21,14 @@ const SingleProjectPage = () => {
     <Container fluid className="single-project-container">
       {project ? (
         <Row className="single-page-row-container">
-          <div className="single-page-row-1-inner-container">
+          <Row className="single-page-row-1-inner-container">
             <div className="single-page-main-image-container">
               <img
                 src={project.imageSrc}
                 alt=""
                 className="single-page-main-image"
               />
+              <div className="single-page-main-image-layer"></div>
             </div>
             <div className="single-page-row-1-name-table-container">
               <div className="single-page-row-1-name-table-inner-container">
@@ -39,8 +40,8 @@ const SingleProjectPage = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
+          </Row>
+          <Row className="single-page-rows-container">
           <Row className="single-page-row single-page-row-2">
             <div className="single-page-description-container">
               <h5>Description</h5>
@@ -63,9 +64,10 @@ const SingleProjectPage = () => {
               <img src={project.imageSrc} alt="" />
             </Col>
           </Row>
-          <Row className="py-5 single-page-carousel-row single-page-row">
+          <Row className="single-page-carousel-row single-page-row">
             <h6>{project.type} projects</h6>
             <MultiItemCarousel projects={filteredProjects} />
+          </Row>
           </Row>
         </Row>
       ) : (
