@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "leaflet/dist/leaflet.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
-import store from './data/store'
+import store from "./data/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

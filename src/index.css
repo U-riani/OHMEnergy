@@ -1583,6 +1583,79 @@ footer p {
   height: 280px;
 }
 
+/* contact page style */
+
+.contact-page-container {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-page-forms-inner-container {
+  max-width: 500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.contact-page-form-number-container {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.contact-page-form-number-start-input-container {
+  height: 100% !important;
+  width: 10% !important;
+  min-width: 120px !important;
+  
+}
+
+.contact-page-form-phone-number-start {
+  border: none !important;
+  border-right: 1px solid grey !important;
+  border-radius: 0px !important;
+}
+
+.contact-page-form-number-input {
+  /* padding-top: 0px !important;
+  padding-bottom: 0px !important; */
+  border: none !important;
+}
+
+.contact-page-form-number-input-container {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  width: 100% !important;
+}
+
+.contact-page-row-map {
+  height: 70vh;
+}
+
+.map-container {
+  width: 100%;
+  height: 100% !important;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fa-location-dot  {
+  width: 100%;
+  height: 100%;
+  size: '2x';
+}
+
+.fa-location-dot::before  {
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  color:rgb(210, 29, 29)
+}
+
 
 @media (min-width: 400px) {
   .employ-name-position-container h6{
@@ -1663,6 +1736,17 @@ footer p {
     margin: 0px;
     display: flex;
     align-items: center;
+  }
+
+  /* contact page style */
+
+  .contact-page-form-name-company-name-input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-page-form-name-company-name-input-container .contact-page-from-input {
+    width: 45% !important;
   }
 }
 
@@ -1766,6 +1850,23 @@ footer p {
 
   .single-page-video-container {
     width: 50% !important;
+  }
+
+  /* contact page style */
+  .contact-page-form-email-phone-number-input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-page-form-email-phone-number-input-container .form-floating-container, .contact-page-from-email-input {
+    width: 45% !important;
+    
+  }
+
+  .contact-page-forms-inner-container {
+    max-width: 750px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -1977,6 +2078,14 @@ footer p {
   flex-direction: column;
   justify-content: flex-end;
   transform: translateX(-50%);
+  }
+
+  /* contact page style */
+
+  .contact-page-forms-inner-container {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 

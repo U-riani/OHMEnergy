@@ -6,6 +6,7 @@ import SingleProjectPage from "./pages/SingleProjectPage";
 import Layout from "./components/Layout";
 import AboutsUs from "./pages/AboutsUs";
 import PartnersPage from "./pages/ParntersPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="projects/:projectId" element={<SingleProjectPage />} />
           <Route path="about-us" element={<AboutsUs />} />
           <Route path="partners" element={<PartnersPage />} />
+          <Route path="contact" element={<ContactPage />} />
+
         </Route>
       </Routes>
     </Router>
