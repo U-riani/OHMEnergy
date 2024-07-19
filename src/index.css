@@ -1591,10 +1591,21 @@ footer p {
   padding-bottom: 30px;
 }
 
-.contact-page-forms-inner-container {
+.contact-page-forms-inner-container form{
   max-width: 500px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.contact-page-form-name-company-name-input-container,
+.contact-page-form-email-phone-number-input-container,
+.contact-page-from-comment-input
+{
+  width: 100%;
 }
 
 .contact-page-form-number-container {
@@ -1654,6 +1665,11 @@ footer p {
   height: 100%;
   font-size: 60px;
   color:rgb(210, 29, 29)
+}
+
+.contact-page-submit-button {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 
@@ -1863,7 +1879,7 @@ footer p {
     
   }
 
-  .contact-page-forms-inner-container {
+  .contact-page-forms-inner-container form{
     max-width: 750px !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -2082,7 +2098,7 @@ footer p {
 
   /* contact page style */
 
-  .contact-page-forms-inner-container {
+  .contact-page-forms-inner-container form{
     max-width: 900px !important;
     margin-left: auto !important;
     margin-right: auto !important;
