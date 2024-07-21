@@ -18,7 +18,7 @@ const ContactsFormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/send-email", {
+    fetch("https://backend-for-ohm-energy-test.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
