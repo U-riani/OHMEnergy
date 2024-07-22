@@ -47,7 +47,7 @@ const ContactsFormComponent = () => {
 
   return (
     <div className="contact-page-forms-inner-container">
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="contact-page-form">
         {/* Form Fields */}
         <div className="contact-page-form-name-company-name-input-container">
           <Form.Floating className="mb-3 contact-page-from-input contact-page-from-name-input">
